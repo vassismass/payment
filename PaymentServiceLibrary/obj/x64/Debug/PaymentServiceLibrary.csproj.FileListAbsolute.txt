@@ -1,0 +1,8 @@
+C:\Users\t-vaj\Desktop\Payment\PaymentServiceLibrary\bin\x64\Debug\Microsoft.SupplyChain.Care.Payment.ServiceLibrary.dll
+C:\Users\t-vaj\Desktop\Payment\PaymentServiceLibrary\bin\x64\Debug\Microsoft.SupplyChain.Care.Payment.ServiceLibrary.pdb
+C:\Users\t-vaj\Desktop\Payment\PaymentServiceLibrary\bin\x64\Debug\Microsoft.SupplyChain.Care.PaymentModels.dll
+C:\Users\t-vaj\Desktop\Payment\PaymentServiceLibrary\bin\x64\Debug\Microsoft.SupplyChain.Care.PaymentModels.pdb
+C:\Users\t-vaj\Desktop\Payment\PaymentServiceLibrary\bin\x64\Debug\Microsoft.SupplyChain.Care.PaymentModels.xml
+C:\Users\t-vaj\Desktop\Payment\PaymentServiceLibrary\obj\x64\Debug\PaymentServiceLibrary.csprojResolveAssemblyReference.cache
+C:\Users\t-vaj\Desktop\Payment\PaymentServiceLibrary\obj\x64\Debug\Microsoft.SupplyChain.Care.Payment.ServiceLibrary.dll
+C:\Users\t-vaj\Desktop\Payment\PaymentServiceLibrary\obj\x64\Debug\Microsoft.SupplyChain.Care.Payment.ServiceLibrary.pdb

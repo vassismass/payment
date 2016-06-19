@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.SupplyChain.Care.PaymentService</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentService.PaymentController">
+            <summary>
+            Service with capabilities to get Payment Methods, Get Tax , Process Physical/Digital Payment, Settle, Release and Refund Payment
+            </summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.PaymentService.PaymentController.GetPaymentMethods(System.String,System.String,System.String)">
+            <summary>
+            Returns list of payment methods like CC,COD based on country, state or postalcode
+            </summary>
+            <param name="countryCode"> [optional] Country eg: US</param>
+            <param name="postalCode"> [optional] Postal Code</param>
+            <param name="stateCode"> [optional] State Code</param>
+            <returns>List of payment methods</returns>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.PaymentService.PaymentController.Tax(Microsoft.SupplyChain.Care.PaymentModels.TaxRequest)">
+            <summary>
+            Calculates Tax amount based on payment details like PaymentMethod, OfferSKU, ShippingSKU, SerialNumber,
+            ProductType, OrderType, StateCode, CountryCode, brand
+            </summary>
+            <param name="payment">Payment</param>
+            <returns>List of tax amounts for respective SKUs</returns>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.PaymentService.PaymentController.Block(Microsoft.SupplyChain.Care.PaymentModels.BlockPaymentRequest)">
+            <summary>
+            Block payment allows to hold/authorize the amount 
+            </summary>
+            <param name="paymentRequest">paymentRequest</param>
+            <returns>PurchaseID</returns>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.PaymentService.PaymentController.Charge(System.String)">
+            <summary>
+            ChargePayment which allows to settle/charge the amount by passing Purchase ID
+            </summary>
+            <param name="PurchaseID">PurchaseID</param>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.PaymentService.PaymentController.Refund(System.String,Microsoft.SupplyChain.Care.PaymentModels.PaymentIdentity)">
+            <summary>
+            Refund Payment for the PurchaseID based on payment identity details PaymentInstrumentId, AccountId, IdentityType, Puid, CustomerId, GuestId
+            </summary>
+            <param name="purchaseID">PurchaseID</param> 
+            <param name="paymentIdentity">paymentIdentity</param> 
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.PaymentService.PaymentController.Release(System.String)">
+            <summary>
+            Release Physical Payment for the PurchaseID
+            </summary>
+            <param name="purchaseID">PurchaseID</param>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentService.PaymentService">
+            <summary>
+            The FabricRuntime creates an instance of this class for each service type instance. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.PaymentService.Program.Main">
+            <summary>
+            This is the entry point of the service host process.
+            </summary>
+        </member>
+    </members>
+</doc>

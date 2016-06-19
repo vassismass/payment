@@ -1,0 +1,1592 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SettlePayment.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.SettlePaymentDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of SettlePayment</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.CommonMethods.Fakes.ShimPaymentCommon">
+            <summary>Shim type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.CommonMethods.PaymentCommon</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.CommonMethods.Fakes.ShimPaymentCommon.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.CommonMethods.Fakes.ShimPaymentCommon.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.CommonMethods.Fakes.ShimPaymentCommon.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.CommonMethods.Fakes.ShimPaymentCommon.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.CommonMethods.Fakes.ShimPaymentCommon.CloseOrAbortProxyICommerceService">
+            <summary>Sets the shim of PaymentCommon.CloseOrAbortProxy(ICommerceService proxy)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.CommonMethods.Fakes.ShimPaymentCommon.GetCPExceptionMessageAbstractResponse">
+            <summary>Sets the shim of PaymentCommon.GetCPExceptionMessage(AbstractResponse CPResponse)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.CommonMethods.Fakes.ShimPaymentCommon.SelectIdentityPaymentIdentity">
+            <summary>Sets the shim of PaymentCommon.SelectIdentity(PaymentIdentity paymentIdentity)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException">
+            <summary>Shim type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.ConfigurationException</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.#ctor(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.ConfigurationException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.Bind(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.IPaymentServiceLibraryException)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.Constructor">
+            <summary>Sets the shim of ConfigurationException.ConfigurationException()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of ConfigurationException.ConfigurationException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.ConstructorString">
+            <summary>Sets the shim of ConfigurationException.ConfigurationException(String message)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimConfigurationException.ConstructorStringException">
+            <summary>Sets the shim of ConfigurationException.ConfigurationException(String message, Exception innerException)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException">
+            <summary>Shim type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.PaymentProviderException</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.#ctor(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.PaymentProviderException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.Bind(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.IPaymentServiceLibraryException)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.Constructor">
+            <summary>Sets the shim of PaymentProviderException.PaymentProviderException()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.ConstructorString">
+            <summary>Sets the shim of PaymentProviderException.PaymentProviderException(String message)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.ConstructorStringException">
+            <summary>Sets the shim of PaymentProviderException.PaymentProviderException(String message, Exception innerException)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimPaymentProviderException.ConstructorStringPaymentExceptioncodeException">
+            <summary>Sets the shim of PaymentProviderException.PaymentProviderException(String message, PaymentExceptioncode exceptionCode, Exception innerException)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException">
+            <summary>Shim type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.ValidationException</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.#ctor(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.ValidationException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.Bind(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.IPaymentServiceLibraryException)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.Constructor">
+            <summary>Sets the shim of ValidationException.ValidationException()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of ValidationException.ValidationException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.ConstructorString">
+            <summary>Sets the shim of ValidationException.ValidationException(String message)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.ShimValidationException.ConstructorStringException">
+            <summary>Sets the shim of ValidationException.ValidationException(String message, Exception innerException)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException">
+            <summary>Stub type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.ConfigurationException</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubConfigurationException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubConfigurationException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.InitializeStub">
+            <summary>Initializes a new instance of type StubConfigurationException</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubConfigurationException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException">
+            <summary>Stub type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.PaymentProviderException</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.#ctor(System.String,Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.PaymentExceptioncode,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubPaymentProviderException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubPaymentProviderException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.InitializeStub">
+            <summary>Initializes a new instance of type StubPaymentProviderException</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubPaymentProviderException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException">
+            <summary>Stub type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.ValidationException</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubValidationException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubValidationException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.InitializeStub">
+            <summary>Initializes a new instance of type StubValidationException</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.Fakes.StubValidationException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext">
+            <summary>Shim type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.InfrastructureRequestContext</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.#ctor(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.InfrastructureRequestContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.AllInstances.BrandGet">
+            <summary>Sets the shim of InfrastructureRequestContext.get_Brand()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.AllInstances.BrandSetString">
+            <summary>Sets the shim of InfrastructureRequestContext.set_Brand(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.AllInstances.RequestSessionGuidGet">
+            <summary>Sets the shim of InfrastructureRequestContext.get_RequestSessionGuid()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.AllInstances.RequestSessionGuidSetString">
+            <summary>Sets the shim of InfrastructureRequestContext.set_RequestSessionGuid(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.AllInstances.SasCorrelationIdGet">
+            <summary>Sets the shim of InfrastructureRequestContext.get_SasCorrelationId()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.AllInstances.SasCorrelationIdSetGuid">
+            <summary>Sets the shim of InfrastructureRequestContext.set_SasCorrelationId(Guid value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.AllInstances.StoreNameGet">
+            <summary>Sets the shim of InfrastructureRequestContext.get_StoreName()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.AllInstances.StoreNameSetString">
+            <summary>Sets the shim of InfrastructureRequestContext.set_StoreName(String value)</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.BrandGet">
+            <summary>Sets the shim of InfrastructureRequestContext.get_Brand()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.BrandSetString">
+            <summary>Sets the shim of InfrastructureRequestContext.set_Brand(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.Constructor">
+            <summary>Sets the shim of InfrastructureRequestContext.InfrastructureRequestContext()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.RequestSessionGuidGet">
+            <summary>Sets the shim of InfrastructureRequestContext.get_RequestSessionGuid()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.RequestSessionGuidSetString">
+            <summary>Sets the shim of InfrastructureRequestContext.set_RequestSessionGuid(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.SasCorrelationIdGet">
+            <summary>Sets the shim of InfrastructureRequestContext.get_SasCorrelationId()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.SasCorrelationIdSetGuid">
+            <summary>Sets the shim of InfrastructureRequestContext.set_SasCorrelationId(Guid value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.StoreNameGet">
+            <summary>Sets the shim of InfrastructureRequestContext.get_StoreName()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimInfrastructureRequestContext.StoreNameSetString">
+            <summary>Sets the shim of InfrastructureRequestContext.set_StoreName(String value)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext">
+            <summary>Shim type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.RequestContext</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.#ctor(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.RequestContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AgentTierGet">
+            <summary>Sets the shim of RequestContext.get_AgentTier()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AgentTierSetString">
+            <summary>Sets the shim of RequestContext.set_AgentTier(String value)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.AgentTierGet">
+            <summary>Sets the shim of RequestContext.get_AgentTier()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.AgentTierSetString">
+            <summary>Sets the shim of RequestContext.set_AgentTier(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.BrandGet">
+            <summary>Sets the shim of RequestContext.get_Brand()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.BrandSetString">
+            <summary>Sets the shim of RequestContext.set_Brand(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.ChannelGet">
+            <summary>Sets the shim of RequestContext.get_Channel()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.ChannelSetChannel">
+            <summary>Sets the shim of RequestContext.set_Channel(Channel value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.CorrelationIdGet">
+            <summary>Sets the shim of RequestContext.get_CorrelationId()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.CorrelationIdSetGuid">
+            <summary>Sets the shim of RequestContext.set_CorrelationId(Guid value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.CustomerIdGet">
+            <summary>Sets the shim of RequestContext.get_CustomerId()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.CustomerIdSetString">
+            <summary>Sets the shim of RequestContext.set_CustomerId(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.EmailGet">
+            <summary>Sets the shim of RequestContext.get_Email()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.EmailSetString">
+            <summary>Sets the shim of RequestContext.set_Email(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.FraudDetectionPropertyGet">
+            <summary>Sets the shim of RequestContext.get_FraudDetectionProperty()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.FraudDetectionPropertyListGet">
+            <summary>Sets the shim of RequestContext.get_FraudDetectionPropertyList()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.FraudDetectionPropertyListSetListOfString">
+            <summary>Sets the shim of RequestContext.set_FraudDetectionPropertyList(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.FraudDetectionPropertySetDictionaryOfStringString">
+            <summary>Sets the shim of RequestContext.set_FraudDetectionProperty(Dictionary`2&lt;String,String&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.IsCustomerGet">
+            <summary>Sets the shim of RequestContext.get_IsCustomer()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.LocaleGet">
+            <summary>Sets the shim of RequestContext.get_Locale()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.AllInstances.LocaleSetString">
+            <summary>Sets the shim of RequestContext.set_Locale(String value)</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.BrandGet">
+            <summary>Sets the shim of RequestContext.get_Brand()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.BrandSetString">
+            <summary>Sets the shim of RequestContext.set_Brand(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.ChannelGet">
+            <summary>Sets the shim of RequestContext.get_Channel()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.ChannelSetChannel">
+            <summary>Sets the shim of RequestContext.set_Channel(Channel value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.Constructor">
+            <summary>Sets the shim of RequestContext.RequestContext()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.CorrelationIdGet">
+            <summary>Sets the shim of RequestContext.get_CorrelationId()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.CorrelationIdSetGuid">
+            <summary>Sets the shim of RequestContext.set_CorrelationId(Guid value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.CustomerIdGet">
+            <summary>Sets the shim of RequestContext.get_CustomerId()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.CustomerIdSetString">
+            <summary>Sets the shim of RequestContext.set_CustomerId(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.EmailGet">
+            <summary>Sets the shim of RequestContext.get_Email()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.EmailSetString">
+            <summary>Sets the shim of RequestContext.set_Email(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.FraudDetectionPropertyGet">
+            <summary>Sets the shim of RequestContext.get_FraudDetectionProperty()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.FraudDetectionPropertyListGet">
+            <summary>Sets the shim of RequestContext.get_FraudDetectionPropertyList()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.FraudDetectionPropertyListSetListOfString">
+            <summary>Sets the shim of RequestContext.set_FraudDetectionPropertyList(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.FraudDetectionPropertySetDictionaryOfStringString">
+            <summary>Sets the shim of RequestContext.set_FraudDetectionProperty(Dictionary`2&lt;String,String&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.IsCustomerGet">
+            <summary>Sets the shim of RequestContext.get_IsCustomer()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.LocaleGet">
+            <summary>Sets the shim of RequestContext.get_Locale()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.ShimRequestContext.LocaleSetString">
+            <summary>Sets the shim of RequestContext.set_Locale(String value)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubInfrastructureRequestContext">
+            <summary>Stub type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.InfrastructureRequestContext</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubInfrastructureRequestContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubInfrastructureRequestContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubInfrastructureRequestContext.InitializeStub">
+            <summary>Initializes a new instance of type StubInfrastructureRequestContext</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubInfrastructureRequestContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubInfrastructureRequestContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubRequestContext">
+            <summary>Stub type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.RequestContext</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubRequestContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubRequestContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubRequestContext.InitializeStub">
+            <summary>Initializes a new instance of type StubRequestContext</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubRequestContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.ExtDependencies.Fakes.StubRequestContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService">
+            <summary>Shim type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.BillingService</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.#ctor(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.BillingService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AccountAcknowlegedAccountInfoOutput">
+            <summary>Sets the shim of BillingService.AccountAcknowleged(AccountInfoOutput accountInfoOutput)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.AccountAcknowlegedAccountInfoOutput">
+            <summary>Sets the shim of BillingService.AccountAcknowleged(AccountInfoOutput accountInfoOutput)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.GenerateAddressAccountInfo">
+            <summary>Sets the shim of BillingService.GenerateAddress(AccountInfo accountInfo)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.GenerateIdentityIdentityAccountInfo">
+            <summary>Sets the shim of BillingService.GenerateIdentity(Identity getIdentity, AccountInfo accountInfo)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.GeneratePhoneAccountInfo">
+            <summary>Sets the shim of BillingService.GeneratePhone(AccountInfo accountInfo)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.GenerateRequestIdentityAccountInfoString">
+            <summary>Sets the shim of BillingService.GenerateRequest(Identity identity, AccountInfo accountInfo, String locale)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.GetBillingAccountStringPaymentIdentity">
+            <summary>Sets the shim of BillingService.GetBillingAccount(String country, PaymentIdentity paymentIdentity)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.GetBillingAccountStringPaymentIdentityICommerceServiceString">
+            <summary>Sets the shim of BillingService.GetBillingAccount(String country, PaymentIdentity paymentIdentity, ICommerceService cpclient, String identityValue)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.GetCpClient">
+            <summary>Sets the shim of BillingService.GetCpClient()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.IdentifyAccountExceptionSearchAccountsResponse">
+            <summary>Sets the shim of BillingService.IdentifyAccountException(SearchAccountsResponse searchresult)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.UpdateAccountSuccessfullyAccountInfoUpdateAccountResponse">
+            <summary>Sets the shim of BillingService.UpdateAccountSuccessfully(AccountInfo accountInfo, UpdateAccountResponse updateAccountResponse)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.UpdateBillingAccountAccountInfoPaymentIdentityStringString">
+            <summary>Sets the shim of BillingService.UpdateBillingAccount(AccountInfo accountInfo, PaymentIdentity paymentIdentity, String locale, String currency)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.AllInstances.UpdateBillingAccountAccountInfoPaymentIdentityStringStringPaymentExceptionPaymentAddressExceptionICommerceServiceString">
+            <summary>Sets the shim of BillingService.UpdateBillingAccount(AccountInfo accountInfo, PaymentIdentity paymentIdentity, String locale, String currency, PaymentException payex, PaymentAddressException payAdEx, ICommerceService cpclient, String identityValue)</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.Bind(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.IBillingServices)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.Constructor">
+            <summary>Sets the shim of BillingService.BillingService()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.GenerateAddressAccountInfo">
+            <summary>Sets the shim of BillingService.GenerateAddress(AccountInfo accountInfo)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.GenerateIdentityIdentityAccountInfo">
+            <summary>Sets the shim of BillingService.GenerateIdentity(Identity getIdentity, AccountInfo accountInfo)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.GeneratePhoneAccountInfo">
+            <summary>Sets the shim of BillingService.GeneratePhone(AccountInfo accountInfo)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.GenerateRequestIdentityAccountInfoString">
+            <summary>Sets the shim of BillingService.GenerateRequest(Identity identity, AccountInfo accountInfo, String locale)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.GetBillingAccountStringPaymentIdentity">
+            <summary>Sets the shim of BillingService.GetBillingAccount(String country, PaymentIdentity paymentIdentity)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.GetBillingAccountStringPaymentIdentityICommerceServiceString">
+            <summary>Sets the shim of BillingService.GetBillingAccount(String country, PaymentIdentity paymentIdentity, ICommerceService cpclient, String identityValue)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.GetCpClient">
+            <summary>Sets the shim of BillingService.GetCpClient()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.IdentifyAccountExceptionSearchAccountsResponse">
+            <summary>Sets the shim of BillingService.IdentifyAccountException(SearchAccountsResponse searchresult)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.StaticConstructor">
+            <summary>Sets the shim of BillingService.BillingService()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.UpdateAccountSuccessfullyAccountInfoUpdateAccountResponse">
+            <summary>Sets the shim of BillingService.UpdateAccountSuccessfully(AccountInfo accountInfo, UpdateAccountResponse updateAccountResponse)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.UpdateBillingAccountAccountInfoPaymentIdentityStringString">
+            <summary>Sets the shim of BillingService.UpdateBillingAccount(AccountInfo accountInfo, PaymentIdentity paymentIdentity, String locale, String currency)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimBillingService.UpdateBillingAccountAccountInfoPaymentIdentityStringStringPaymentExceptionPaymentAddressExceptionICommerceServiceString">
+            <summary>Sets the shim of BillingService.UpdateBillingAccount(AccountInfo accountInfo, PaymentIdentity paymentIdentity, String locale, String currency, PaymentException payex, PaymentAddressException payAdEx, ICommerceService cpclient, String identityValue)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension">
+            <summary>Shim type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.CorePaymentServiceExtension</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.ConvertCPAddressToAddressAddressString">
+            <summary>Sets the shim of CorePaymentServiceExtension.ConvertCPAddressToAddress(Address addressIn, String email)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.ConvertToPurchaseContentRequestLineItemStringGuid">
+            <summary>Sets the shim of CorePaymentServiceExtension.ConvertToPurchaseContentRequest(LineItem lineItem, String dataCenter, Guid partnerGuid)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.ConvertToPurchaseRequestLineItemStringGuidString">
+            <summary>Sets the shim of CorePaymentServiceExtension.ConvertToPurchaseRequest(LineItem lineItem, String dataCenter, Guid partnerGuid, String shipFromPath)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.GetCountryFromCountryCodeString">
+            <summary>Sets the shim of CorePaymentServiceExtension.GetCountryFromCountryCode(String countryCode)</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.GetCurrentMethodContextOf1M0ObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Object[],System.Collections.Generic.Dictionary{System.String,System.String}})">
+            <summary>Sets the shim of CorePaymentServiceExtension.GetCurrentMethodContext(!!0 obj, Object[] paramValues)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.GetShipFromAddressLineItemString">
+            <summary>Sets the shim of CorePaymentServiceExtension.GetShipFromAddress(LineItem lineitem, String shipFromPath)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.GetTwoLetterCountryCodeString">
+            <summary>Sets the shim of CorePaymentServiceExtension.GetTwoLetterCountryCode(String countryCode)</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.ShimCorePaymentServiceExtension.SerializeObjectOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.String})">
+            <summary>Sets the shim of CorePaymentServiceExtension.SerializeObject(!!0 obj)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.StubBillingService">
+            <summary>Stub type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.BillingService</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.StubBillingService.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.StubBillingService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.StubBillingService.InitializeStub">
+            <summary>Initializes a new instance of type StubBillingService</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.StubBillingService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Fakes.StubBillingService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry">
+            <summary>Shim type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Country</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.#ctor(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Country)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.AllInstances.IsoAlpha2CodeGet">
+            <summary>Sets the shim of Country.get_IsoAlpha2Code()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.AllInstances.IsoAlpha2CodeSetString">
+            <summary>Sets the shim of Country.set_IsoAlpha2Code(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.AllInstances.IsoAlpha3CodeGet">
+            <summary>Sets the shim of Country.get_IsoAlpha3Code()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.AllInstances.IsoAlpha3CodeSetString">
+            <summary>Sets the shim of Country.set_IsoAlpha3Code(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.AllInstances.IsoCountryLongNameGet">
+            <summary>Sets the shim of Country.get_IsoCountryLongName()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.AllInstances.IsoCountryLongNameSetString">
+            <summary>Sets the shim of Country.set_IsoCountryLongName(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.AllInstances.IsoCountryNumberGet">
+            <summary>Sets the shim of Country.get_IsoCountryNumber()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.AllInstances.IsoCountryNumberSetString">
+            <summary>Sets the shim of Country.set_IsoCountryNumber(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.AllInstances.IsoCountryShortNameGet">
+            <summary>Sets the shim of Country.get_IsoCountryShortName()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.AllInstances.IsoCountryShortNameSetString">
+            <summary>Sets the shim of Country.set_IsoCountryShortName(String value)</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.Constructor">
+            <summary>Sets the shim of Country.Country()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.IsoAlpha2CodeGet">
+            <summary>Sets the shim of Country.get_IsoAlpha2Code()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.IsoAlpha2CodeSetString">
+            <summary>Sets the shim of Country.set_IsoAlpha2Code(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.IsoAlpha3CodeGet">
+            <summary>Sets the shim of Country.get_IsoAlpha3Code()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.IsoAlpha3CodeSetString">
+            <summary>Sets the shim of Country.set_IsoAlpha3Code(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.IsoCountryLongNameGet">
+            <summary>Sets the shim of Country.get_IsoCountryLongName()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.IsoCountryLongNameSetString">
+            <summary>Sets the shim of Country.set_IsoCountryLongName(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.IsoCountryNumberGet">
+            <summary>Sets the shim of Country.get_IsoCountryNumber()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.IsoCountryNumberSetString">
+            <summary>Sets the shim of Country.set_IsoCountryNumber(String value)</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.IsoCountryShortNameGet">
+            <summary>Sets the shim of Country.get_IsoCountryShortName()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimCountry.IsoCountryShortNameSetString">
+            <summary>Sets the shim of Country.set_IsoCountryShortName(String value)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider">
+            <summary>Shim type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.GeoXmlDataProvider</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.#ctor(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.GeoXmlDataProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.AllInstances.GetCountries">
+            <summary>Sets the shim of GeoXmlDataProvider.GetCountries()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.AllInstances.GetCountriesFromXml">
+            <summary>Sets the shim of GeoXmlDataProvider.GetCountriesFromXml()</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.Constructor">
+            <summary>Sets the shim of GeoXmlDataProvider.GeoXmlDataProvider()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.GetCountries">
+            <summary>Sets the shim of GeoXmlDataProvider.GetCountries()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.GetCountriesFromXml">
+            <summary>Sets the shim of GeoXmlDataProvider.GetCountriesFromXml()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGeoXmlDataProvider.StaticConstructor">
+            <summary>Sets the shim of GeoXmlDataProvider.GeoXmlDataProvider()</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse">
+            <summary>Shim type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.GetCountriesResponse</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse.#ctor(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.GetCountriesResponse)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse.AllInstances.CountriesGet">
+            <summary>Sets the shim of GetCountriesResponse.get_Countries()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse.AllInstances.CountriesSetListOfCountry">
+            <summary>Sets the shim of GetCountriesResponse.set_Countries(List`1&lt;Country&gt; value)</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse.Constructor">
+            <summary>Sets the shim of GetCountriesResponse.GetCountriesResponse()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse.CountriesGet">
+            <summary>Sets the shim of GetCountriesResponse.get_Countries()</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.ShimGetCountriesResponse.CountriesSetListOfCountry">
+            <summary>Sets the shim of GetCountriesResponse.set_Countries(List`1&lt;Country&gt; value)</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubCountry">
+            <summary>Stub type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Country</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubCountry.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubCountry.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubCountry.InitializeStub">
+            <summary>Initializes a new instance of type StubCountry</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubCountry.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubCountry.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGeoXmlDataProvider">
+            <summary>Stub type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.GeoXmlDataProvider</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGeoXmlDataProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGeoXmlDataProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGeoXmlDataProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubGeoXmlDataProvider</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGeoXmlDataProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGeoXmlDataProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGetCountriesResponse">
+            <summary>Stub type of Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.GetCountriesResponse</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGetCountriesResponse.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGetCountriesResponse.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGetCountriesResponse.InitializeStub">
+            <summary>Initializes a new instance of type StubGetCountriesResponse</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGetCountriesResponse.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Geography.Fakes.StubGetCountriesResponse.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:SettlePayment.Exceptions.Fakes.ShimAddressException">
+            <summary>Shim type of SettlePayment.Exceptions.AddressException</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.ShimAddressException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.ShimAddressException.#ctor(SettlePayment.Exceptions.AddressException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:SettlePayment.Exceptions.Fakes.ShimAddressException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.ShimAddressException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.ShimAddressException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.ShimAddressException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.ShimAddressException.Bind(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.IPaymentServiceLibraryException)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.ShimAddressException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.ShimAddressException.Constructor">
+            <summary>Sets the shim of AddressException.AddressException()</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.ShimAddressException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of AddressException.AddressException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.ShimAddressException.ConstructorString">
+            <summary>Sets the shim of AddressException.AddressException(String message)</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.ShimAddressException.ConstructorStringException">
+            <summary>Sets the shim of AddressException.AddressException(String message, Exception innerException)</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.ShimAddressException.ConstructorStringPaymentExceptioncodeException">
+            <summary>Sets the shim of AddressException.AddressException(String message, PaymentExceptioncode exceptionCode, Exception innerException)</summary>
+        </member>
+        <member name="T:SettlePayment.Exceptions.Fakes.StubAddressException">
+            <summary>Stub type of SettlePayment.Exceptions.AddressException</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.StubAddressException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.StubAddressException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.StubAddressException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.StubAddressException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.StubAddressException.#ctor(System.String,Microsoft.SupplyChain.Care.Payment.ServiceLibrary.Exceptions.PaymentExceptioncode,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.StubAddressException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubAddressException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.StubAddressException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubAddressException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.StubAddressException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.StubAddressException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:SettlePayment.Exceptions.Fakes.StubAddressException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.StubAddressException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:SettlePayment.Exceptions.Fakes.StubAddressException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.StubAddressException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SettlePayment.Exceptions.Fakes.StubAddressException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.StubAddressException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:SettlePayment.Exceptions.Fakes.StubAddressException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:SettlePayment.Exceptions.Fakes.StubAddressException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.StubAddressException.InitializeStub">
+            <summary>Initializes a new instance of type StubAddressException</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.StubAddressException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.StubAddressException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.StubAddressException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:SettlePayment.Exceptions.Fakes.StubAddressException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.StubAddressException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:SettlePayment.Exceptions.Fakes.StubAddressException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:SettlePayment.Exceptions.Fakes.StubAddressException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:SettlePayment.Exceptions.Fakes.StubAddressException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:SettlePayment.Exceptions.Fakes.StubAddressException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:SettlePayment.Exceptions.Fakes.StubAddressException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:SettlePayment.Exceptions.Fakes.StubAddressException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.ShimCPPaymentProvider">
+            <summary>Shim type of SettlePayment.CPPaymentProvider</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPPaymentProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPPaymentProvider.#ctor(SettlePayment.CPPaymentProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.AlreadySettledErrMsgGet">
+            <summary>Sets the shim of CPPaymentProvider.get_AlreadySettledErrMsg()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.DatacenterCurrentGet">
+            <summary>Sets the shim of CPPaymentProvider.get_DatacenterCurrent()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.EnableFraudDetectionGet">
+            <summary>Sets the shim of CPPaymentProvider.get_EnableFraudDetection()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.GetAddressIdAccountInfoPaymentIdentityLineItemStringString">
+            <summary>Sets the shim of CPPaymentProvider.GetAddressId(AccountInfo accountInfo, PaymentIdentity paymentIdentity, LineItem skuInfo, String locale, String currency)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.GetInfo">
+            <summary>Sets the shim of CPPaymentProvider.GetInfo()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.GetServiceAgent">
+            <summary>Sets the shim of CPPaymentProvider.GetServiceAgent()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.IsZipCodeIncludedInCpComparisionGet">
+            <summary>Sets the shim of CPPaymentProvider.get_IsZipCodeIncludedInCpComparision()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.PartnerGuidGet">
+            <summary>Sets the shim of CPPaymentProvider.get_PartnerGuid()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.ProductGuidGet">
+            <summary>Sets the shim of CPPaymentProvider.get_ProductGuid()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.PurchaseGoodsPurchaseGoodsRequest">
+            <summary>Sets the shim of CPPaymentProvider.PurchaseGoods(PurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.PurchaseGoodsStringGuidPaymentIdentityStringAccountInfoStringStringStringLineItemDictionaryOfStringStringStringOutDecimalOutDecimalOutStringOut">
+            <summary>Sets the shim of CPPaymentProvider.PurchaseGoods(String purchaseType, Guid trackingGuid, PaymentIdentity paymentIdentity, String country, AccountInfo accountInfo, String serialNumber, String locale, String currency, LineItem skuInfo, Dictionary`2&lt;String,String&gt; fraudDetectionProperty, String&amp; purchaseID, Decimal&amp; lineItemTax, Decimal&amp; shippmentTax, String&amp; status)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.SettlePurchaseGoodsPaymentIdentityStringLineItemStringGuid">
+            <summary>Sets the shim of CPPaymentProvider.SettlePurchaseGoods(PaymentIdentity paymentIdentity, String country, LineItem skuInfo, String purchaseID, Guid trackingGuid)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.SettlePurchaseGoodsSettlePurchaseGoodsRequest">
+            <summary>Sets the shim of CPPaymentProvider.SettlePurchaseGoods(SettlePurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AllInstances.ShipFromPathGet">
+            <summary>Sets the shim of CPPaymentProvider.get_ShipFromPath()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.AlreadySettledErrMsgGet">
+            <summary>Sets the shim of CPPaymentProvider.get_AlreadySettledErrMsg()</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPPaymentProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPPaymentProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.ConstructorIGetConfigurationIServiceAgentIBillingServices">
+            <summary>Sets the shim of CPPaymentProvider.CPPaymentProvider(IGetConfiguration Configuration, IServiceAgent serviceAgent, IBillingServices billingService)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.DatacenterCurrentGet">
+            <summary>Sets the shim of CPPaymentProvider.get_DatacenterCurrent()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.EnableFraudDetectionGet">
+            <summary>Sets the shim of CPPaymentProvider.get_EnableFraudDetection()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.GetAddressIdAccountInfoPaymentIdentityLineItemStringString">
+            <summary>Sets the shim of CPPaymentProvider.GetAddressId(AccountInfo accountInfo, PaymentIdentity paymentIdentity, LineItem skuInfo, String locale, String currency)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.GetInfo">
+            <summary>Sets the shim of CPPaymentProvider.GetInfo()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.GetServiceAgent">
+            <summary>Sets the shim of CPPaymentProvider.GetServiceAgent()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.IsZipCodeIncludedInCpComparisionGet">
+            <summary>Sets the shim of CPPaymentProvider.get_IsZipCodeIncludedInCpComparision()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.PartnerGuidGet">
+            <summary>Sets the shim of CPPaymentProvider.get_PartnerGuid()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.ProductGuidGet">
+            <summary>Sets the shim of CPPaymentProvider.get_ProductGuid()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.PurchaseGoodsPurchaseGoodsRequest">
+            <summary>Sets the shim of CPPaymentProvider.PurchaseGoods(PurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.SerializeObject">
+            <summary>Sets the shim of CPPaymentProvider.Serialize(Object obj)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.SettlePurchaseGoodsPaymentIdentityStringLineItemStringGuid">
+            <summary>Sets the shim of CPPaymentProvider.SettlePurchaseGoods(PaymentIdentity paymentIdentity, String country, LineItem skuInfo, String purchaseID, Guid trackingGuid)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.SettlePurchaseGoodsSettlePurchaseGoodsRequest">
+            <summary>Sets the shim of CPPaymentProvider.SettlePurchaseGoods(SettlePurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPPaymentProvider.ShipFromPathGet">
+            <summary>Sets the shim of CPPaymentProvider.get_ShipFromPath()</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.ShimCPServiceAgent">
+            <summary>Shim type of SettlePayment.CPServiceAgent</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPServiceAgent.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPServiceAgent.#ctor(SettlePayment.CPServiceAgent)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.ShimCPServiceAgent.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.AllInstances.AuthorizeDigitalPurchaseStringPaymentIdentityLineItemGuidDictionaryOfStringString">
+            <summary>Sets the shim of CPServiceAgent.AuthorizeDigitalPurchase(String addressid, PaymentIdentity paymentIdentity, LineItem skuInfo, Guid PurchasetrackingGuid, Dictionary`2&lt;String,String&gt; fraudDetectionProperty)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.AllInstances.AuthorizeOrderStringPaymentIdentityLineItemOrderStringOutDecimalOutDecimalOutDictionaryOfStringString">
+            <summary>Sets the shim of CPServiceAgent.AuthorizeOrder(String addressId, PaymentIdentity paymentIdentity, LineItem skuInfo, Order response, String&amp; purchaseID, Decimal&amp; lineItemTax, Decimal&amp; shippmentTax, Dictionary`2&lt;String,String&gt; fraudDetectionProperty)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.AllInstances.CloseOrAbortProxyICommerceService">
+            <summary>Sets the shim of CPServiceAgent.CloseOrAbortProxy(ICommerceService proxy)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.AllInstances.GetCPExceptionMessageAbstractResponse">
+            <summary>Sets the shim of CPServiceAgent.GetCPExceptionMessage(AbstractResponse CPResponse)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.AllInstances.GetCPPaymentStatusCodeString">
+            <summary>Sets the shim of CPServiceAgent.GetCPPaymentStatusCode(String purchasestatus)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.AllInstances.GetCpClient">
+            <summary>Sets the shim of CPServiceAgent.GetCpClient()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.AllInstances.HandleExceptionExceptionDictionaryOfStringString">
+            <summary>Sets the shim of CPServiceAgent.HandleException(Exception exception, Dictionary`2&lt;String,String&gt; context)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.AllInstances.PopulateFraudDetectionPropertiesAbstractPurchaseRequestDictionaryOfStringString">
+            <summary>Sets the shim of CPServiceAgent.PopulateFraudDetectionProperties(AbstractPurchaseRequest purchaseRequest, Dictionary`2&lt;String,String&gt; fraudDetectionProperty)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.AllInstances.SettlePurchaseGoodsPaymentIdentityLineItemStringGuid">
+            <summary>Sets the shim of CPServiceAgent.SettlePurchaseGoods(PaymentIdentity paymentIdentity, LineItem skuInfo, String purchaseID, Guid trackingGuid)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.AuthorizeDigitalPurchaseStringPaymentIdentityLineItemGuidDictionaryOfStringString">
+            <summary>Sets the shim of CPServiceAgent.AuthorizeDigitalPurchase(String addressid, PaymentIdentity paymentIdentity, LineItem skuInfo, Guid PurchasetrackingGuid, Dictionary`2&lt;String,String&gt; fraudDetectionProperty)</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPServiceAgent.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPServiceAgent.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPServiceAgent.Bind(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.IServiceAgent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.CloseOrAbortProxyICommerceService">
+            <summary>Sets the shim of CPServiceAgent.CloseOrAbortProxy(ICommerceService proxy)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.Constructor">
+            <summary>Sets the shim of CPServiceAgent.CPServiceAgent()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.ConstructorCPAgentInfo">
+            <summary>Sets the shim of CPServiceAgent.CPServiceAgent(CPAgentInfo Inf)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.GetCPExceptionMessageAbstractResponse">
+            <summary>Sets the shim of CPServiceAgent.GetCPExceptionMessage(AbstractResponse CPResponse)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.GetCPPaymentStatusCodeString">
+            <summary>Sets the shim of CPServiceAgent.GetCPPaymentStatusCode(String purchasestatus)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.GetCpClient">
+            <summary>Sets the shim of CPServiceAgent.GetCpClient()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.GetSettlePhysicalGoodsRequestObjectStringIdentityLineItemStringGuid">
+            <summary>Sets the shim of CPServiceAgent.GetSettlePhysicalGoodsRequestObject(String accountId, Identity identity, LineItem skuInfo, String purchaseID, Guid trackingGuid)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.HandleExceptionExceptionDictionaryOfStringString">
+            <summary>Sets the shim of CPServiceAgent.HandleException(Exception exception, Dictionary`2&lt;String,String&gt; context)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.PopulateFraudDetectionPropertiesAbstractPurchaseRequestDictionaryOfStringString">
+            <summary>Sets the shim of CPServiceAgent.PopulateFraudDetectionProperties(AbstractPurchaseRequest purchaseRequest, Dictionary`2&lt;String,String&gt; fraudDetectionProperty)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.SelectIdentityPaymentIdentity">
+            <summary>Sets the shim of CPServiceAgent.SelectIdentity(PaymentIdentity paymentIdentity)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.SettlePurchaseGoodsPaymentIdentityLineItemStringGuid">
+            <summary>Sets the shim of CPServiceAgent.SettlePurchaseGoods(PaymentIdentity paymentIdentity, LineItem skuInfo, String purchaseID, Guid trackingGuid)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceAgent.StaticConstructor">
+            <summary>Sets the shim of CPServiceAgent.CPServiceAgent()</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.ShimCPServiceValidator">
+            <summary>Shim type of SettlePayment.CPServiceValidator</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPServiceValidator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPServiceValidator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimCPServiceValidator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceValidator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceValidator.ValidatePurchaseGoodsPurchaseGoodsRequestValidationExceptionRef">
+            <summary>Sets the shim of CPServiceValidator.ValidatePurchaseGoods(PurchaseGoodsRequest request, ValidationException&amp; fault)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimCPServiceValidator.ValidateSettlePurchaseGoodsSettlePurchaseGoodsRequestValidationExceptionRef">
+            <summary>Sets the shim of CPServiceValidator.ValidateSettlePurchaseGoods(SettlePurchaseGoodsRequest request, ValidationException&amp; fault)</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.ShimPaymentProvider">
+            <summary>Shim type of SettlePayment.PaymentProvider</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimPaymentProvider.#ctor(SettlePayment.PaymentProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.ShimPaymentProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimPaymentProvider.AllInstances.HandleExceptionExceptionPaymentExceptioncodeDictionaryOfStringString">
+            <summary>Sets the shim of PaymentProvider.HandleException(Exception exception, PaymentExceptioncode exceptionCode, Dictionary`2&lt;String,String&gt; context)</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimPaymentProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimPaymentProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimPaymentProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimPaymentProvider.Constructor">
+            <summary>Sets the shim of PaymentProvider.PaymentProvider()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimPaymentProvider.HandleExceptionExceptionPaymentExceptioncodeDictionaryOfStringString">
+            <summary>Sets the shim of PaymentProvider.HandleException(Exception exception, PaymentExceptioncode exceptionCode, Dictionary`2&lt;String,String&gt; context)</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.ShimXmlUtility">
+            <summary>Shim type of SettlePayment.XmlUtility</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimXmlUtility.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimXmlUtility.#ctor(SettlePayment.XmlUtility)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.ShimXmlUtility.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimXmlUtility.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimXmlUtility.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.Constructor">
+            <summary>Sets the shim of XmlUtility.XmlUtility()</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimXmlUtility.DataContractSerializeObjectOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.String})">
+            <summary>Sets the shim of XmlUtility.DataContractSerializeObject(!!0 objectToSerialize)</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimXmlUtility.DeserializeFromXmlOf1String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,``0})">
+            <summary>Sets the shim of XmlUtility.DeserializeFromXml(String file)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.FormatStringString">
+            <summary>Sets the shim of XmlUtility.FormatString(String serializedXML)</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimXmlUtility.SerializeObjectOf1M0TypeArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Type[],System.String})">
+            <summary>Sets the shim of XmlUtility.SerializeObject(!!0 obj, Type[] extraTypes)</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.ShimXmlUtility.ShimInput">
+            <summary>Shim type of SettlePayment.XmlUtility+Input</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimXmlUtility.ShimInput.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimXmlUtility.ShimInput.#ctor(SettlePayment.XmlUtility.Input)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.ShimXmlUtility.ShimInput.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.ShimInput.AllInstances.NameGet">
+            <summary>Sets the shim of Input.get_Name()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.ShimInput.AllInstances.NameSetString">
+            <summary>Sets the shim of Input.set_Name(String value)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.ShimInput.AllInstances.ValueGet">
+            <summary>Sets the shim of Input.get_Value()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.ShimInput.AllInstances.ValueSetString">
+            <summary>Sets the shim of Input.set_Value(String value)</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimXmlUtility.ShimInput.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.ShimXmlUtility.ShimInput.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.ShimInput.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.ShimInput.Constructor">
+            <summary>Sets the shim of Input.Input()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.ShimInput.NameGet">
+            <summary>Sets the shim of Input.get_Name()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.ShimInput.NameSetString">
+            <summary>Sets the shim of Input.set_Name(String value)</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.ShimInput.ValueGet">
+            <summary>Sets the shim of Input.get_Value()</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.ShimXmlUtility.ShimInput.ValueSetString">
+            <summary>Sets the shim of Input.set_Value(String value)</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.StubCPPaymentProvider">
+            <summary>Stub type of SettlePayment.CPPaymentProvider</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubCPPaymentProvider.#ctor(Microsoft.SupplyChain.Care.Payment.ServiceLibrary.IGetConfiguration,Microsoft.SupplyChain.Care.Payment.ServiceLibrary.IServiceAgent,Microsoft.SupplyChain.Care.Payment.ServiceLibrary.IBillingServices)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubCPPaymentProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubCPPaymentProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubCPPaymentProvider</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubCPPaymentProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubCPPaymentProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubCPPaymentProvider.PurchaseGoods(SettlePayment.PurchaseGoodsRequest)">
+            <summary>Sets the stub of CPPaymentProvider.PurchaseGoods(PurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="F:SettlePayment.Fakes.StubCPPaymentProvider.PurchaseGoodsPurchaseGoodsRequest">
+            <summary>Sets the stub of CPPaymentProvider.PurchaseGoods(PurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubCPPaymentProvider.SettlePurchaseGoods(SettlePayment.SettlePurchaseGoodsRequest)">
+            <summary>Sets the stub of CPPaymentProvider.SettlePurchaseGoods(SettlePurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="F:SettlePayment.Fakes.StubCPPaymentProvider.SettlePurchaseGoodsSettlePurchaseGoodsRequest">
+            <summary>Sets the stub of CPPaymentProvider.SettlePurchaseGoods(SettlePurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.StubCPServiceAgent">
+            <summary>Stub type of SettlePayment.CPServiceAgent</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubCPServiceAgent.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubCPServiceAgent.#ctor(Microsoft.SupplyChain.Care.PaymentModels.CPAgentInfo)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubCPServiceAgent.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubCPServiceAgent.InitializeStub">
+            <summary>Initializes a new instance of type StubCPServiceAgent</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubCPServiceAgent.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubCPServiceAgent.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.StubPaymentProvider">
+            <summary>Stub type of SettlePayment.PaymentProvider</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubPaymentProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubPaymentProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubPaymentProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubPaymentProvider</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubPaymentProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubPaymentProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubPaymentProvider.PurchaseGoods(SettlePayment.PurchaseGoodsRequest)">
+            <summary>Sets the stub of PaymentProvider.PurchaseGoods(PurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="F:SettlePayment.Fakes.StubPaymentProvider.PurchaseGoodsPurchaseGoodsRequest">
+            <summary>Sets the stub of PaymentProvider.PurchaseGoods(PurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubPaymentProvider.SettlePurchaseGoods(SettlePayment.SettlePurchaseGoodsRequest)">
+            <summary>Sets the stub of PaymentProvider.SettlePurchaseGoods(SettlePurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="F:SettlePayment.Fakes.StubPaymentProvider.SettlePurchaseGoodsSettlePurchaseGoodsRequest">
+            <summary>Sets the stub of PaymentProvider.SettlePurchaseGoods(SettlePurchaseGoodsRequest request)</summary>
+        </member>
+        <member name="T:SettlePayment.Fakes.StubXmlUtility">
+            <summary>Stub type of SettlePayment.XmlUtility</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubXmlUtility.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubXmlUtility.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:SettlePayment.Fakes.StubXmlUtility.InitializeStub">
+            <summary>Initializes a new instance of type StubXmlUtility</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubXmlUtility.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SettlePayment.Fakes.StubXmlUtility.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

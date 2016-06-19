@@ -1,0 +1,2 @@
+C:\Users\t-vaj\Desktop\Payment\PaymentApp\obj\x64\Debug\PaymentApp.sfprojResolveAssemblyReference.cache
+C:\CareServices\Payment\Source\Payment\PaymentApp\obj\x64\Debug\PaymentApp.sfprojResolveAssemblyReference.cache

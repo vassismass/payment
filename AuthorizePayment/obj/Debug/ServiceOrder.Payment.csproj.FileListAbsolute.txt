@@ -1,0 +1,54 @@
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\obj\Debug\ServiceOrder.Payment.csprojResolveAssemblyReference.cache
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Payment.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Payment.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\EDD.Highlander.Commerce.ExtendedService.ContractLibrary.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.DataProvider.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Infrastructure.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Infrastructure.ExceptionManagement.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Providers.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\ServiceOrder.Common.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.Practices.Unity.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Commerce.Data.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.SupplyChain.Services.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Newtonsoft.Json.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Infrastructure.Configuration.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Cache.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Common.Utility.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Infrastructure.Logging.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ApplicationServer.Caching.Client.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ApplicationServer.Caching.Core.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Infrastructure.Cache.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.SharePoint.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\EDD.Highlander.Commerce.ExtendedService.ChannelFactory.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Trustee.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\AntiXssLibrary.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.WindowsFabric.Data.Common.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.WindowsFabric.Common.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.SharePoint.Security.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\EDD.Highlander.Commerce.ExtendedService.ContractLibrary.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Infrastructure.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Infrastructure.ExceptionManagement.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\ServiceOrder.Common.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.DataProvider.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Providers.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Commerce.Data.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.SupplyChain.Services.xml
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Newtonsoft.Json.xml
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Infrastructure.Configuration.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Cache.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Common.Utility.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Infrastructure.Logging.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\Microsoft.ServiceOrder.Infrastructure.Cache.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\bin\Debug\EDD.Highlander.Commerce.ExtendedService.ChannelFactory.pdb
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\obj\Debug\Microsoft.ServiceOrder.Payment.dll
+C:\SAS\Source\SAS\Providers\ServiceOrder.Payment\obj\Debug\Microsoft.ServiceOrder.Payment.pdb
+C:\Users\t-pugoe\Desktop\New folder\ServiceOrder.Payment\obj\Debug\ServiceOrder.Payment.csprojResolveAssemblyReference.cache
+C:\Users\t-pugoe\Desktop\New folder\ServiceOrder.Payment\obj\Debug\Microsoft.ServiceOrder.Payment.dll
+C:\Users\t-pugoe\Desktop\New folder\ServiceOrder.Payment\obj\Debug\Microsoft.ServiceOrder.Payment.pdb
+C:\Users\t-pugoe\Documents\My_Project\Implemented Payment models\ServiceOrder.Payment\obj\Debug\ServiceOrder.Payment.csprojResolveAssemblyReference.cache
+C:\Users\t-pugoe\Documents\My_Project\Implemented Payment models\ServiceOrder.Payment\obj\Debug\Microsoft.ServiceOrder.Payment.dll
+C:\Users\t-pugoe\Documents\My_Project\Implemented Payment models\ServiceOrder.Payment\obj\Debug\Microsoft.ServiceOrder.Payment.pdb

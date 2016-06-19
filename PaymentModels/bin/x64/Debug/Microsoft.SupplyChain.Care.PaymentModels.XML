@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.SupplyChain.Care.PaymentModels</name>
+    </assembly>
+    <members>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Address.Country">
+            <summary>
+            Country 
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Address.StateOrProvince">
+            <summary>
+            StateOrProvince
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Address.City">
+            <summary>
+            City
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Address.Address1">
+            <summary>
+            AddressLine1
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Address.Address2">
+            <summary>
+            AddressLine2
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Address.PostalCode">
+            <summary>
+            PostalCode
+            </summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.BlockPaymentRequest">
+            <summary>
+            Names of the properties exposed by the Payment entity.
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.BlockPaymentRequest.payment">
+            <summary>
+            Payment 
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.BlockPaymentRequest.order">
+            <summary>
+            ServiceOrder 
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.BlockPaymentRequest.Puid">
+            <summary>
+            Puid of the customer 
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.BlockPaymentRequest.GuestID">
+            <summary>
+            GuestID of the customer 
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.BlockPaymentRequest.trackingGuid">
+            <summary>
+            TrackingGuid of the customer 
+            </summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.Carrier">
+            <summary>
+            Carrier details for an inbound or Outbound shipment
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Carrier.AWBNumber">
+            <summary>
+            Airway bill number
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Carrier.Name">
+            <summary>
+            Carrier name
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Carrier.TrackingUrl">
+            <summary>
+            Tracking url
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ContactInformation.FirstName">
+            <summary>
+            FirstName
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ContactInformation.LastName">
+            <summary>
+            LastName
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ContactInformation.EmailAddress">
+            <summary>
+            EmailAddress
+            </summary>  
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ContactInformation.ContactNumber">
+            <summary>
+            ContactNumber
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ContactInformation.Address">
+            <summary>
+            Address
+            </summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.DeviceKey">
+            <summary>
+            Device key details
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.DeviceKey.Key">
+            <summary>
+            Device key
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.DeviceKey.KeyType">
+            <summary>
+            Ket type - IMEI or SN
+            </summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.GetTaxRequest">
+            <summary>
+            Names of the properties exposed by the Payment entity.
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.GetTaxRequest.PaymentMethod">
+            <summary>
+            Gets or sets the PaymentMethod like CC, COD
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.GetTaxRequest.RepairOfferSKU">
+            <summary>
+            Gets or sets the RepairOfferSKU
+            </summary>
+            <value> RepairOfferSKU selected by the customer</value>  
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.GetTaxRequest.ShippingOfferSKU">
+            <summary>
+            Gets or sets the ShippingOfferSKU
+            </summary>
+            <value> ShippingOfferSKU selected by the customer</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.GetTaxRequest.DeviceSerialNumber">
+            <summary>
+            Registered Device serial number 
+            </summary>
+            <value> Device serial number</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.GetTaxRequest.ProductType">
+            <summary>
+            ProductType for the device
+            </summary>
+            <value> ProductType like Xbox 360</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.GetTaxRequest.OrderType">
+            <summary>
+            Order type like Repair Order,Advance Exchange
+            </summary>
+            <value>Order type</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.GetTaxRequest.StateCode">
+             <summary> 
+            Gets or sets the StateCode
+            </summary>
+            <value>StateCode</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.GetTaxRequest.CountryCode">
+            <summary>
+            Gets or sets the CountryCode
+            </summary>
+            <value> CountryCode like US,UK</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.GetTaxRequest.brand">
+            <summary>
+            Gets or sets the Brand
+            </summary>
+            <value> Brand like Xbox, surface</value>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.Order">
+            <summary>
+            Service order 
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.ServiceRequestNumber">
+            <summary>
+            Service Request Number - Unique Identifier
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.ShipTo">
+            <summary>
+            Ship to Address
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.BillTo">
+            <summary>
+            Bill to Address
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.Carrier">
+            <summary>
+            Carrier information for Inbound or outbound shipment
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.CustomerId">
+            <summary>
+            Customer Id - Unique identifier for Customer
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.Payment">
+            <summary>
+            Payment information
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.OfferSku">
+            <summary>
+            Repair offer SKU
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.ShippingOfferSku">
+            <summary>
+            Shipping offer SKU
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.Status">
+            <summary>
+            Service request status Open or Closed or Cancelled
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.State">
+            <summary>
+            Current state of order e.g New, InProcess, InitiateRequestOrder, ShipmentReceived,ShipmentSent
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.TicketedDevice">
+            <summary>
+            Ticketed device details
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.Order.OrderType">
+            <summary>
+            OrderType or service type availed by customer e.g RepairOrder, AdvanceExchange,ISE, Upgrade etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.OrderPayment.PaymentStatus">
+            <summary>
+            Payment status as PaymentPending, GTS Pending, GTS Rejected, Completed.
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.OrderPayment.PaymentGateway">
+            <summary>
+            Gets or sets the PaymentGateway 
+            </summary>
+            <value>PaymentGateway like CP, COD,NC etc.,</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.OrderPayment.AccountID">
+            <summary>
+            Gets or sets the payment AccountID . Required when PayementGateway is CP
+            </summary>
+            <value>AccountID</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.OrderPayment.InstrumentID">
+            <summary>
+            Gets or sets the payment InstrumentID.Mandatory when PayementGateway is CP
+            </summary>
+            <value>InstrumentID</value>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.PaymentError">
+            <summary>
+            Error entity
+            </summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.PaymentIdentity">
+            <summary>
+            Names of the properties exposed for Payment Identity
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentIdentity.PaymentInstrumentId">
+            <summary>
+            Gets or sets the payment InstrumentID.Mandatory when PaymentGateway is CP
+            </summary>
+            <value>PaymentInstrumentId</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentIdentity.AccountId">
+            <summary>
+            Gets or sets the payment AccountID . Required when PaymentGateway is CP
+            </summary>
+            <value>AccountID</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentIdentity.IdentityType">
+            <summary>
+            Gets or sets the IdentityType
+            </summary>
+            <value>IdentityType</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentIdentity.Puid">
+            <summary>
+            Gets or sets the Puid
+            </summary>
+            <value>Puid</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentIdentity.CustomerId">
+            <summary>
+            Gets or sets the Customer ID
+            </summary>
+            <value>Puid</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentIdentity.GuestId">
+            <summary>
+            Gets or sets the Geust ID
+            </summary>
+            <value>Geust ID</value>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.PaymentRequest">
+            <summary>
+            Names of the properties exposed by the Payment entity.
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentResponse.Ack">
+            <summary>
+            Gets or sets the Acknowledgement returned from CP response
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentResponse.IsSameTrackingGuidRetry">
+            <summary>
+            Gets or sets the IsSameTrackingGuidRetry returned from CP response
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentResponse.Currency">
+            <summary>
+            Gets or sets the currency of the payment
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentResponse.TotalAmountWithoutTax">
+            <summary>
+            Gets or sets the TotalAmountWithoutTax
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentResponse.TotalTax">
+            <summary>
+            Gets or sets the TotalTax
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PaymentResponse.TaxEntries">
+            <summary>
+            Gets or sets the TaxEntries
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PhoneNumber.AreaCode">
+            <summary>
+            AreaCode
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PhoneNumber.CountryCode">
+            <summary>
+            CountryCode
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PhoneNumber.Extension">
+            <summary>
+            Extension
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.PhoneNumber.Number">
+            <summary>
+            Number
+            </summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.SalesOrderDoc">
+            Represent sales order document which customer has in case he has bought customised accessory or device from marketplace
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.SalesOrderDoc.SalesOrderNumber">
+            <summary>
+            Sale order number
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.SalesOrderDoc.LineItemNumber">
+            <summary>
+            Line item number containing the actual purchase detail of the accessory or device as one SalesOrderDoc can have multiple items
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.SalesOrderDoc.PurcahseDate">
+            <summary>
+            When was the sale executed
+            </summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder">
+            <summary>
+            Service order 
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.ServiceRequestNumber">
+            <summary>
+            Service Request Number - Unique Identifier
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.ShipTo">
+            <summary>
+            Ship to Address
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.BillTo">
+            <summary>
+            Bill to Address
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.Carrier">
+            <summary>
+            Carrier information for Inbound or outbound shipment
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.CustomerId">
+            <summary>
+            Customer Id - Unique identifier for Customer
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.Payment">
+            <summary>
+            Payment information
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.ProblemComments">
+            <summary>
+            Comments for product problem
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.ProblemId">
+            <summary>
+            Problem Id - Unique identifier
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.ProofOfPurchaseId">
+            <summary>
+            Proof of purchase Id - Unique Identifier
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.OfferSku">
+            <summary>
+            Repair offer SKU
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.SalesOrder">
+            <summary>
+            Sales order document details containing details of customised accessory or device sale
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.ShippedDevice">
+            <summary>
+            device which has been shipped back as part of repair or exchange
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.ShippingComments">
+            <summary>
+            Shipping comments
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.ShippingOfferSku">
+            <summary>
+            Shipping offer SKU
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.Status">
+            <summary>
+            Service request status Open or Closed or Cancelled
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.State">
+            <summary>
+            Current state of order e.g New, InProcess, InitiateRequestOrder, ShipmentReceived,ShipmentSent
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.TicketedDevice">
+            <summary>
+            device on which order has been created
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.OrderType">
+            <summary>
+            OrderType or service type availed by customer e.g RepairOrder, AdvanceExchange,ISE, Upgrade etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.ServiceOrder.AccessoryType">
+            <summary>
+            In case of fullfilment order , accessory type is mandatory. e.g Pen,Power Cable
+            </summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.TaxEntry">
+            <summary>
+            Names of the properties exposed by the Payment entity.
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxInfo.RepairOfferPrice">
+            <summary>
+            Repair Offer Price 
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxInfo.RepairOfferTax">
+            <summary>
+            Repair Offer tax 
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxInfo.ShippingOfferPrice">
+            <summary>
+            Shipping Offer Price 
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxInfo.ShippingOfferTax">
+            <summary>
+            Shipping Offer tax 
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxInfo.RepairExtndPrice">
+            <summary>
+            Repair Extended Price
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxInfo.RepairExtndTax">
+            <summary>
+            Repair Extended Tax
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxInfo.TotalAmoutWithoutTax">
+            <summary>
+            Total amount excluding extended price and tax
+            </summary>             
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxInfo.TotalAmount">
+            <summary>
+            Total amount includingTax and excluding extended price
+            </summary>
+        </member>
+        <member name="T:Microsoft.SupplyChain.Care.PaymentModels.TaxRequest">
+            <summary>
+            Names of the properties exposed by the Payment entity.
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxRequest.payment">
+            <summary>
+            Payment Details
+            </summary>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxRequest.Device">
+            <summary>
+            Device details 
+            </summary>
+            <value> Device key  like SN,IMEI and value</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxRequest.PaymentMethod">
+            <summary>
+            Gets or sets the PaymentMethod like CC, COD
+            </summary>        
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxRequest.RepairOfferSKU">
+            <summary>
+            Gets or sets the RepairOfferSKU
+            </summary>
+            <value> RepairOfferSKU selected by the customer</value>  
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxRequest.ShippingOfferSKU">
+            <summary>
+            Gets or sets the ShippingOfferSKU
+            </summary>
+            <value> ShippingOfferSKU selected by the customer</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxRequest.StateCode">
+             <summary> 
+            Gets or sets the StateCode
+            </summary>
+            <value>StateCode</value>
+        </member>
+        <member name="P:Microsoft.SupplyChain.Care.PaymentModels.TaxRequest.CountryCode">
+            <summary>
+            Gets or sets the CountryCode
+            </summary>
+            <value> CountryCode like US,UK</value>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,17 @@
+C:\Users\ranjans\Source\Repos\SC-CUSTCS-NFRCSC-PHNX-Payment\Source\Payment\PaymentModels\bin\Debug\Microsoft.SupplyChain.Care.PaymentModels.XML
+C:\Users\ranjans\Source\Repos\SC-CUSTCS-NFRCSC-PHNX-Payment\Source\Payment\PaymentModels\bin\Debug\Microsoft.SupplyChain.Care.PaymentModels.dll
+C:\Users\ranjans\Source\Repos\SC-CUSTCS-NFRCSC-PHNX-Payment\Source\Payment\PaymentModels\bin\Debug\Microsoft.SupplyChain.Care.PaymentModels.pdb
+C:\Users\ranjans\Source\Repos\SC-CUSTCS-NFRCSC-PHNX-Payment\Source\Payment\PaymentModels\obj\Debug\PaymentModels.csprojResolveAssemblyReference.cache
+C:\Users\ranjans\Source\Repos\SC-CUSTCS-NFRCSC-PHNX-Payment\Source\Payment\PaymentModels\obj\Debug\Microsoft.SupplyChain.Care.PaymentModels.dll
+C:\Users\ranjans\Source\Repos\SC-CUSTCS-NFRCSC-PHNX-Payment\Source\Payment\PaymentModels\obj\Debug\Microsoft.SupplyChain.Care.PaymentModels.pdb
+C:\Users\t-vaj\Desktop\Payment\PaymentModels\bin\Debug\Microsoft.SupplyChain.Care.PaymentModels.XML
+C:\Users\t-vaj\Desktop\Payment\PaymentModels\bin\Debug\Microsoft.SupplyChain.Care.PaymentModels.dll
+C:\Users\t-vaj\Desktop\Payment\PaymentModels\bin\Debug\Microsoft.SupplyChain.Care.PaymentModels.pdb
+C:\Users\t-vaj\Desktop\Payment\PaymentModels\obj\Debug\PaymentModels.csprojResolveAssemblyReference.cache
+C:\Users\t-vaj\Desktop\Payment\PaymentModels\obj\Debug\Microsoft.SupplyChain.Care.PaymentModels.dll
+C:\Users\t-vaj\Desktop\Payment\PaymentModels\obj\Debug\Microsoft.SupplyChain.Care.PaymentModels.pdb
+C:\CareServices\Payment\Source\Payment\PaymentModels\bin\Debug\Microsoft.SupplyChain.Care.PaymentModels.XML
+C:\CareServices\Payment\Source\Payment\PaymentModels\bin\Debug\Microsoft.SupplyChain.Care.PaymentModels.dll
+C:\CareServices\Payment\Source\Payment\PaymentModels\bin\Debug\Microsoft.SupplyChain.Care.PaymentModels.pdb
+C:\CareServices\Payment\Source\Payment\PaymentModels\obj\Debug\Microsoft.SupplyChain.Care.PaymentModels.dll
+C:\CareServices\Payment\Source\Payment\PaymentModels\obj\Debug\Microsoft.SupplyChain.Care.PaymentModels.pdb

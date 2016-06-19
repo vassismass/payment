@@ -1,0 +1,1731 @@
+﻿<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SupplyChain.Services</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.SupplyChain.Address">
+      <summary>
+            Represents an address.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Address.Street">
+      <summary>
+            Gets or sets the multi-line street address.
+            </summary>
+      <value>The street address.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Address.City">
+      <summary>
+            Gets or sets the address city.
+            </summary>
+      <value>The address city.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Address.StateOrProvince">
+      <summary>
+            Gets or sets the address state or province.
+            </summary>
+      <value>The address state or province.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Address.PostalCode">
+      <summary>
+            Gets or sets the address postal code.
+            </summary>
+      <value>The address postal code.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Address.Country">
+      <summary>
+            Gets or sets the address country.
+            </summary>
+      <value>The address country code in ISO 3166-1 format.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Address.IsValidated">
+      <summary>
+            Gets or sets a value indicating whether the address has been validated.
+            </summary>
+      <value>True if the address has been validated; otherwise, false.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.ContactInformation">
+      <summary>
+            Represent the contact information for a person.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.ContactInformation.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.ContactInformation" /> class.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ContactInformation.Name">
+      <summary>
+            Gets or sets the contact name.
+            </summary>
+      <value>The contact <see cref="T:Microsoft.SupplyChain.PersonalName">name</see>.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ContactInformation.Address">
+      <summary>
+            Gets or sets the contact address.
+            </summary>
+      <value>The contact <see cref="P:Microsoft.SupplyChain.ContactInformation.Address">address</see>.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ContactInformation.PhoneNumber">
+      <summary>
+            Gets or sets the contact telephone number.
+            </summary>
+      <value>The contact <see cref="P:Microsoft.SupplyChain.ContactInformation.PhoneNumber">telephone number</see>.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ContactInformation.EmailAddress">
+      <summary>
+            Gets or sets the contact e-mail address.
+            </summary>
+      <value>The contact e-mail address.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.CorrelatableMessage">
+      <summary>
+            Represents the base implementation for a correlatable message.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.CorrelatableMessage.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.CorrelatableMessage" /> class.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.CorrelatableMessage.CorrelationId">
+      <summary>
+            Gets or sets the correlation identifier associated with the message.
+            </summary>
+      <value>The <see cref="T:System.Nullable`1">optional</see> correlation <see cref="T:System.Guid">identifier</see>.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.DateRange">
+      <summary>
+            Represents a range between two date and times.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.DateRange.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.DateRange" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.DateRange.#ctor(System.DateTime,System.DateTime)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.DateRange" /> class.
+            </summary>
+      <param name="startDate">The start <see cref="T:System.DateTime">date</see> of the range.</param>
+      <param name="endDate">The end <see cref="T:System.DateTime">date</see> of the range.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.DateRange.StartDate">
+      <summary>
+            Gets or sets the start of the date range.
+            </summary>
+      <value>The start <see cref="T:System.DateTime">date</see> of range.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.DateRange.EndDate">
+      <summary>
+            Gets or sets the end of the date range.
+            </summary>
+      <value>The end <see cref="T:System.DateTime">date</see> of range.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.ActionNotSupportedFault">
+      <summary>
+            Represents the fault information returned when a SOAP action
+            (<see cref="T:System.ServiceModel.OperationContractAttribute">service operation</see>) is not supported.
+            </summary>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.BaseFault">
+      <summary>
+            Represents the standard base fault from WS-BaseFaults.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.BaseFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.BaseFault" /> class.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.BaseFault.Namespaces">
+      <summary>
+            Gets the XML namespaces used during serialization.
+            </summary>
+      <value>The <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces">XML namespaces</see> used by the <see cref="T:System.Xml.Serialization.XmlSerializer">XML serializer</see>.</value>
+      <remarks>This property can be used control XML namespace and prefix mapping to reduce the number of times a namespace is repeated.</remarks>
+      <getter>
+        <ensures csharp="this.namespaces != null" vb="Me.namespaces &lt;&gt; Nothing">this.namespaces != null</ensures>
+      </getter>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.BaseFault.CorrelationId">
+      <summary>
+            Gets or sets the correlation identifier associated with the message.
+            </summary>
+      <value>A correlation <see cref="T:System.Guid">identifier</see>.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.BaseFault.Timestamp">
+      <summary>
+            Gets or sets the date and time of the fault in Universal Time Coordinated (UTC).
+            </summary>
+      <value>A <see cref="T:System.DateTime" /> structure.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.BaseFault.Originator">
+      <summary>
+            Gets or sets the originator of the fault.
+            </summary>
+      <value>A <see cref="T:Microsoft.SupplyChain.EndpointReference" /> object.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.BaseFault.ErrorCode">
+      <summary>
+            Gets or sets the error code for the fault.
+            </summary>
+      <value>An <see cref="P:Microsoft.SupplyChain.Faults.BaseFault.ErrorCode" /> object.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.BaseFault.Descriptions">
+      <summary>
+            Gets or sets a list of language-specific descriptions about the fault.
+            </summary>
+      <value>A <see cref="T:System.Collections.Generic.List`1">list</see> object.</value>
+      <getter>
+        <ensures csharp="this.descriptions != null" vb="Me.descriptions &lt;&gt; Nothing">this.descriptions != null</ensures>
+      </getter>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.BaseFault.FaultCause">
+      <summary>
+            Gets or sets raw XML regarding the cause of the fault.
+            </summary>
+      <value>A <see cref="T:System.Xml.Linq.XElement" /> object.</value>
+      <remarks>This is a fault extension point. The provided <see cref="T:System.Xml.Linq.XElement">XML element</see>
+            must be from an XML namesapce other than http://docs.oasis-open.org/wsrf/bf-2.</remarks>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.ActionNotSupportedFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.ActionNotSupportedFault" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.ActionNotSupportedFault.#ctor(System.Uri)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.ActionNotSupportedFault" /> class.
+            </summary>
+      <param name="action">The SOAP action that is not supported.</param>
+      <requires csharp="action != (System.Uri)null" vb="action &lt;&gt; ((System.Uri)Nothing) ">action != (System.Uri)null</requires>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.ActionNotSupportedFault.Action">
+      <summary>
+            Gets or sets the SOAP action that is unsupported.
+            </summary>
+      <value>The SOAP action <see cref="T:Microsoft.SupplyChain.SerializableUri">URI</see> that is unsupported.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.InvalidAddressFault">
+      <summary>
+            Represents the fault that occurs when an invalid address is encountered.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.InvalidAddressFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.InvalidAddressFault" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.InvalidAddressFault.#ctor(Microsoft.SupplyChain.Address)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.InvalidAddressFault" /> class.
+            </summary>
+      <param name="invalidAddress">The invalid <see cref="T:Microsoft.SupplyChain.Address">address</see> associated with the fault.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.InvalidAddressFault.InvalidAddress">
+      <summary>
+            Gets or sets the invalid address associated with the fault.
+            </summary>
+      <value>The associated invalid <see cref="T:Microsoft.SupplyChain.Address">address</see>. This property can be null.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.ProductBrandMismatchFault">
+      <summary>
+            Represents the fault that occurs when a reference to a product does not match the expected product brand.
+            </summary>
+      <remarks>This fault can be used for a variety of scenarios such as when a client wants to register an Xbox,
+            but the serial number for a Zune was provided. If the client does not specify a product brand, then the
+            client has expressed they are not interested in enforcing brand restriction and this fault should not be
+            returned.</remarks>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.ProductBrandMismatchFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.ProductBrandMismatchFault" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.ProductBrandMismatchFault.#ctor(System.String,System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.ProductBrandMismatchFault" /> class.
+            </summary>
+      <param name="productBrand">The actual product brand.</param>
+      <param name="expectedProductBrand">The expected product brand.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.ProductBrandMismatchFault.ProductBrand">
+      <summary>
+            Gets or sets the actual product brand.
+            </summary>
+      <value>The actual product brand of an associated product.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.ProductBrandMismatchFault.ExpectedProductBrand">
+      <summary>
+            Gets or sets the expected product brand.
+            </summary>
+      <value>The expected product brand.</value>
+      <remarks>The expected product brand is typically provided by the client.</remarks>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.UrlSchemeNotSupportedFault">
+      <summary>
+            Represents the fault information returned when a <see cref="P:Microsoft.SupplyChain.Faults.UrlSchemeNotSupportedFault.UrlScheme">URL scheme</see> is not supported.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.UrlSchemeNotSupportedFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.UrlSchemeNotSupportedFault" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.UrlSchemeNotSupportedFault.#ctor(Microsoft.SupplyChain.UrlScheme)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.UrlSchemeNotSupportedFault" /> class.
+            </summary>
+      <param name="urlScheme">The <see cref="P:Microsoft.SupplyChain.Faults.UrlSchemeNotSupportedFault.UrlScheme">URL scheme</see> that is not supported.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.UrlSchemeNotSupportedFault.UrlScheme">
+      <summary>
+            Gets or sets the URL scheme that is unsupported.
+            </summary>
+      <value>The <see cref="P:Microsoft.SupplyChain.Faults.UrlSchemeNotSupportedFault.UrlScheme">URL scheme</see> that is unsupported.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.InvalidSearchTermFault">
+      <summary>
+            Represents the fault information returned when an invalid search term is encountered.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.InvalidSearchTermFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.InvalidSearchTermFault" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.InvalidSearchTermFault.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.InvalidSearchTermFault" /> class.
+            </summary>
+      <param name="invalidTerm">The invalid search term.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.InvalidSearchTermFault.InvalidTerm">
+      <summary>
+            Gets or sets the invalid search term.
+            </summary>
+      <value>The invalid search term.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.MessageValidationFault">
+      <summary>
+            Represents the fault information returned when a message validation error occurs.
+            </summary>
+      <remarks>This fault is typically returned when an unspecified validation error occurs. A more specific fault
+            should be used for validation error when possible.</remarks>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.MessageValidationFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.MessageValidationFault" /> class.
+            </summary>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.PagedRequestFault">
+      <summary>
+            Represents the fault information returned when an error occurs during a <see cref="T:Microsoft.SupplyChain.PagedRequest">paged request</see>.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.PagedRequestFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.PagedRequestFault" /> class.
+            </summary>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.ServiceUnavailableFault">
+      <summary>
+            Represents the fault information returned when a service is unavailable.
+            </summary>
+      <remarks>This fault is typically returned when an unhandled exception is encountered.</remarks>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.ServiceUnavailableFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.ServiceUnavailableFault" /> class.
+            </summary>
+    </member>
+    <member name="T:Microsoft.SupplyChain.GuestIdentity">
+      <summary>
+            Represents a guest identity.
+            </summary>
+      <remarks>A guest identity is not anonymous, but a well-known "guest", which is usually a fixed account.</remarks>
+    </member>
+    <member name="T:Microsoft.SupplyChain.IdentityReference">
+      <summary>
+            Represents the base implementation for an identity reference.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.IdentityReference.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.IdentityReference" /> class.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.IdentityReference.Name">
+      <summary>
+            Gets or sets the name of the identity.
+            </summary>
+      <value>The identity name.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.IdentityReference.DisplayName">
+      <summary>
+            Gets or sets the display name of the identity.
+            </summary>
+      <value>The identity display name.</value>
+    </member>
+    <member name="M:Microsoft.SupplyChain.GuestIdentity.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.GuestIdentity" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.GuestIdentity.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.GuestIdentity" /> class.
+            </summary>
+      <value>The guest identifier associated with the die</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.GuestIdentity.GuestId">
+      <summary>
+            Gets or sets the guest account identifier.
+            </summary>
+      <value>The guest account identifier.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.HardwareCustomerIdentity">
+      <summary>
+            Represents a hardware customer identity.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.HardwareCustomerIdentity.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.HardwareCustomerIdentity" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.HardwareCustomerIdentity.#ctor(System.Int32)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.HardwareCustomerIdentity" /> class.
+            </summary>
+      <param name="customerId">The hardware customer identifier for the identity.</param>
+    </member>
+    <member name="M:Microsoft.SupplyChain.HardwareCustomerIdentity.#ctor(System.String,System.String,System.Int32)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.HardwareCustomerIdentity" /> class.
+            </summary>
+      <param name="name">The name of the identity. This is typically an e-mail address.</param>
+      <param name="displayName">The display name of the identity.</param>
+      <param name="customerId">The hardware customer identifier for the identity.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.HardwareCustomerIdentity.CustomerId">
+      <summary>
+            Gets or sets the hardware customer identifier.
+            </summary>
+      <value>The hardware customer identifier.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.HardwareCustomerIdentity.IsOrganization">
+      <summary>
+            Gets or sets a value indicating whether the hardware customer identity represents an organization.
+            </summary>
+      <value>True if the identity represents an organization; otherwise, false.  The
+            default value is false.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.ICollectionTExtensions">
+      <summary>
+            Provides extension methods for <see cref="T:System.Collections.Generic.ICollection`1">collections</see>.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.ICollectionTExtensions.ClearAndAddRange``1(System.Collections.Generic.ICollection{``0},System.Collections.Generic.IEnumerable{``0})">
+      <summary>
+            Clears and then adds all of items in the specified sequence.
+            </summary>
+      <typeparam name="T">The <see cref="T:System.Type">type</see> of item to add.</typeparam>
+      <param name="collection">The <see cref="T:System.Collections.Generic.ICollection`1">collection</see> to clear and subsequently add items to.</param>
+      <param name="sequence">The <see cref="T:System.Collections.Generic.IEnumerable`1">sequence</see> of items to add.</param>
+      <requires csharp="collection != null" vb="collection &lt;&gt; Nothing">collection != null</requires>
+    </member>
+    <member name="T:Microsoft.SupplyChain.NamedUri">
+      <summary>
+            Represents an Uniform Resource Indicator (URI) with a name and description.
+            </summary>
+    </member>
+    <member name="T:Microsoft.SupplyChain.SerializableUri">
+      <summary>
+            Represents a serializable Uniform Resource Indicator (URI).
+            </summary>
+      <remarks>The intrinsic <see cref="T:System.Uri" /> is not XML serializable because it does not have a parameterless constructor.</remarks>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.SerializableUri" /> class from a serialization context.
+            </summary>
+      <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo">serialization information</see> to deserialize from.</param>
+      <param name="streamingContext">The <see cref="T:System.Runtime.Serialization.StreamingContext">streaming context</see> to deserialize from.</param>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.SerializableUri" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.SerializableUri" /> class.
+            </summary>
+      <param name="uriString">The value for the URI.</param>
+      <requires csharp="!IsNullOrEmpty(uriString)" vb="Not IsNullOrEmpty(uriString)">!string.IsNullOrEmpty(uriString)</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.#ctor(System.String,System.UriKind)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.SerializableUri" /> class.
+            </summary>
+      <param name="uriString">The value for the URI.</param>
+      <param name="uriKind">One of the <see cref="T:System.UriKind" /> values.</param>
+      <requires csharp="!IsNullOrEmpty(uriString)" vb="Not IsNullOrEmpty(uriString)">!string.IsNullOrEmpty(uriString)</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.#ctor(System.Uri,System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.SerializableUri" /> class based on the base <see cref="T:System.Uri" /> and relative URI.
+            </summary>
+      <param name="baseUri">The base <see cref="T:System.Uri" /> to intialize from.</param>
+      <param name="relativeUri">The relative URI to initialize with.</param>
+      <requires csharp="baseUri != (System.Uri)null" vb="baseUri &lt;&gt; ((System.Uri)Nothing) ">baseUri != (System.Uri)null</requires>
+      <requires csharp="!IsNullOrEmpty(relativeUri)" vb="Not IsNullOrEmpty(relativeUri)">!string.IsNullOrEmpty(relativeUri)</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.#ctor(System.Uri,System.Uri)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.SerializableUri" /> class based on the base <see cref="T:System.Uri" /> and relative <see cref="T:System.Uri" />.
+            </summary>
+      <param name="baseUri">The base <see cref="T:System.Uri" /> to intialize from.</param>
+      <param name="relativeUri">The relative <see cref="T:System.Uri" /> to initialize with.</param>
+      <requires csharp="baseUri != (System.Uri)null" vb="baseUri &lt;&gt; ((System.Uri)Nothing) ">baseUri != (System.Uri)null</requires>
+      <requires csharp="relativeUri != (System.Uri)null" vb="relativeUri &lt;&gt; ((System.Uri)Nothing) ">relativeUri != (System.Uri)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.#ctor(System.Uri)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.SerializableUri" /> class based on another <see cref="T:System.Uri" />.
+            </summary>
+      <param name="uri">The <see cref="T:System.Uri" /> to initialize from.</param>
+      <requires csharp="uri != (System.Uri)null" vb="uri &lt;&gt; ((System.Uri)Nothing) ">uri != (System.Uri)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.ExportSchema(System.Xml.Schema.XmlSchemaSet)">
+      <summary>
+            Gets the XML schema qualified name for the current type.
+            </summary>
+      <param name="schemas">The set of <see cref="T:System.Xml.Schema.XmlSchemaSet">XML schemas</see> that contains the qualified name.</param>
+      <returns>The corresponding <see cref="T:System.Xml.XmlQualifiedName">XML qualified name</see>.</returns>
+      <requires csharp="schemas != null" vb="schemas &lt;&gt; Nothing">schemas != null</requires>
+      <ensures csharp="result != (System.Xml.XmlQualifiedName)null" vb="result &lt;&gt; ((System.Xml.XmlQualifiedName)Nothing) ">result != (System.Xml.XmlQualifiedName)null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.Initialize(System.Uri)">
+      <summary>
+            Initializes the instance with the specified Uniform Resource Indicator (URI).
+            </summary>
+      <param name="uri">The <see cref="T:System.Uri" /> to initialize the instance with.</param>
+      <remarks>This method is used to support serialization scenarios.</remarks>
+      <requires csharp="uri != (System.Uri)null" vb="uri &lt;&gt; ((System.Uri)Nothing) ">uri != (System.Uri)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.ReadXml(System.Xml.XmlReader)">
+      <summary>
+            Deserializes the current instance from the specified XML reader.
+            </summary>
+      <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to deserialize the current instance from.</param>
+      <requires csharp="reader != null" vb="reader &lt;&gt; Nothing">reader != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.WriteXml(System.Xml.XmlWriter)">
+      <summary>
+            Serializes the current instance to the specified XML writer.
+            </summary>
+      <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to serialize the current instance to.</param>
+      <requires csharp="writer != null" vb="writer &lt;&gt; Nothing">writer != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.Equals(System.Object)">
+      <summary>
+            Returns text value indicating whether this instance and text specified object represent the same value.
+            </summary>
+      <param name="obj">An object to compare to this instance.</param>
+      <returns>True if <paramref name="obj" /> is equal to this instance; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.GetHashCode">
+      <summary>
+            Returns text hash code for the current instance.
+            </summary>
+      <returns>The hash code for the current instance.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.op_Equality(Microsoft.SupplyChain.SerializableUri,System.Uri)">
+      <summary>
+            Returns an indication whether the values of two specified <see cref="T:System.Uri" /> objects are equal.
+            </summary>
+      <param name="uri">A <see cref="T:Microsoft.SupplyChain.SerializableUri" /> object to compare.</param>
+      <param name="otherUri">A <see cref="T:System.Uri" /> object to compare to.</param>
+      <returns>True if <paramref name="uri" /> and <paramref name="otherUri" /> are equal; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.op_Inequality(Microsoft.SupplyChain.SerializableUri,System.Uri)">
+      <summary>
+            Returns an indication whether the values of two specified <see cref="T:System.Uri" /> objects are not equal.
+            </summary>
+      <param name="uri">The <see cref="T:Microsoft.SupplyChain.SerializableUri" /> object to compare.</param>
+      <param name="otherUri">The <see cref="T:System.Uri" /> object to compare to.</param>
+      <returns>True if <paramref name="uri" /> and <paramref name="otherUri" /> are not equal; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.Equals(System.Uri)">
+      <summary>
+            Returns text value indicating whether this instance and text specified <see cref="T:System.Uri" /> object represent the same value.
+            </summary>
+      <param name="other">A <see cref="T:System.Uri" /> object to compare to this instance.</param>
+      <returns>True if <paramref name="other" /> is equal to this instance; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.NamedUri.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.NamedUri" /> class from a serialization context.
+            </summary>
+      <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo">serialization information</see> to deserialize from.</param>
+      <param name="streamingContext">The <see cref="T:System.Runtime.Serialization.StreamingContext">streaming context</see> to deserialize from.</param>
+      <requires csharp="serializationInfo != null" vb="serializationInfo &lt;&gt; Nothing">serializationInfo != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.NamedUri.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.NamedUri" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.NamedUri.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.NamedUri" /> class.
+            </summary>
+      <param name="uriString">The value for the URI.</param>
+      <requires csharp="!IsNullOrEmpty(uriString)" vb="Not IsNullOrEmpty(uriString)">!string.IsNullOrEmpty(uriString)</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.NamedUri.#ctor(System.String,System.UriKind)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.NamedUri" /> class.
+            </summary>
+      <param name="uriString">The value for the URI.</param>
+      <param name="uriKind">One of the <see cref="T:System.UriKind" /> values.</param>
+      <requires csharp="!IsNullOrEmpty(uriString)" vb="Not IsNullOrEmpty(uriString)">!string.IsNullOrEmpty(uriString)</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.NamedUri.#ctor(System.Uri,System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.NamedUri" /> class based on the base <see cref="T:System.Uri" /> and relative URI.
+            </summary>
+      <param name="baseUri">The base <see cref="T:System.Uri" /> to intialize from.</param>
+      <param name="relativeUri">The relative URI to initialize with.</param>
+      <requires csharp="baseUri != (System.Uri)null" vb="baseUri &lt;&gt; ((System.Uri)Nothing) ">baseUri != (System.Uri)null</requires>
+      <requires csharp="!IsNullOrEmpty(relativeUri)" vb="Not IsNullOrEmpty(relativeUri)">!string.IsNullOrEmpty(relativeUri)</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.NamedUri.#ctor(System.Uri,System.Uri)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.NamedUri" /> class based on the base <see cref="T:System.Uri" /> and relative <see cref="T:System.Uri" />.
+            </summary>
+      <param name="baseUri">The base <see cref="T:System.Uri" /> to intialize from.</param>
+      <param name="relativeUri">The relative <see cref="T:System.Uri" /> to initialize with.</param>
+      <requires csharp="baseUri != (System.Uri)null" vb="baseUri &lt;&gt; ((System.Uri)Nothing) ">baseUri != (System.Uri)null</requires>
+      <requires csharp="relativeUri != (System.Uri)null" vb="relativeUri &lt;&gt; ((System.Uri)Nothing) ">relativeUri != (System.Uri)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.NamedUri.#ctor(System.Uri)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.NamedUri" /> class based on another <see cref="T:System.Uri" />.
+            </summary>
+      <param name="uri">The <see cref="T:System.Uri" /> to initialize from.</param>
+      <requires csharp="uri != (System.Uri)null" vb="uri &lt;&gt; ((System.Uri)Nothing) ">uri != (System.Uri)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.NamedUri.ExportSchema(System.Xml.Schema.XmlSchemaSet)">
+      <summary>
+            Gets the XML schema qualified name for the current type.
+            </summary>
+      <param name="schemas">The set of <see cref="T:System.Xml.Schema.XmlSchemaSet">XML schemas</see> that contains the qualified name.</param>
+      <returns>The corresponding <see cref="T:System.Xml.XmlQualifiedName">XML qualified name</see>.</returns>
+      <requires csharp="schemas != null" vb="schemas &lt;&gt; Nothing">schemas != null</requires>
+      <ensures csharp="result != (System.Xml.XmlQualifiedName)null" vb="result &lt;&gt; ((System.Xml.XmlQualifiedName)Nothing) ">result != (System.Xml.XmlQualifiedName)null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.NamedUri.ReadXml(System.Xml.XmlReader)">
+      <summary>
+            Deserializes the current instance from the specified XML reader.
+            </summary>
+      <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to deserialize the current instance from.</param>
+      <requires inheritedFrom="M:Microsoft.SupplyChain.SerializableUri.ReadXml(System.Xml.XmlReader)" inheritedFromTypeName="SerializableUri" csharp="reader != null" vb="reader &lt;&gt; Nothing">reader != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.NamedUri.WriteXml(System.Xml.XmlWriter)">
+      <summary>
+            Serializes the current instance to the specified XML writer.
+            </summary>
+      <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to serialize the current instance to.</param>
+      <requires inheritedFrom="M:Microsoft.SupplyChain.SerializableUri.WriteXml(System.Xml.XmlWriter)" inheritedFromTypeName="SerializableUri" csharp="writer != null" vb="writer &lt;&gt; Nothing">writer != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.NamedUri.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>
+            Sets the <paramref name="info">serialization information</paramref> with the name and description of the URL.
+            </summary>
+      <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo">serialization information</see> to serialize to.</param>
+      <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext">streaming context</see> to serialize to.</param>
+      <requires inheritedFrom="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" inheritedFromTypeName="ISerializable" csharp="info != null" vb="info &lt;&gt; Nothing">info != null</requires>
+    </member>
+    <member name="P:Microsoft.SupplyChain.NamedUri.Name">
+      <summary>
+            Gets or sets the name of the URI.
+            </summary>
+      <value>The URI name.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.NamedUri.Description">
+      <summary>
+            Gets or sets the URI description.
+            </summary>
+      <value>The URI description.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.PagedResponse">
+      <summary>
+            Represents a paged data response.
+            </summary>
+    </member>
+    <member name="T:Microsoft.SupplyChain.LocalizableMessage">
+      <summary>
+            Represents base implementation of a message with a version number.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.LocalizableMessage.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.LocalizableMessage" /> class.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.LocalizableMessage.Namespaces">
+      <summary>
+            Gets the XML namespaces used during serialization.
+            </summary>
+      <value>The <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces">XML namespaces</see> used by the <see cref="T:System.Xml.Serialization.XmlSerializer">XML serializer</see>.</value>
+      <remarks>This property can be used control XML namespace and prefix mapping to reduce the number of times a namespace is repeated.</remarks>
+      <getter>
+        <ensures csharp="this.namespaces != null" vb="Me.namespaces &lt;&gt; Nothing">this.namespaces != null</ensures>
+      </getter>
+    </member>
+    <member name="P:Microsoft.SupplyChain.LocalizableMessage.LanguageCode">
+      <summary>
+            Gets or sets the RFC 4646 language code.
+            </summary>
+      <value>The RFC 4646 language code expressed as language and optionally country (ISO 3166-1).</value>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PagedResponse.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.PagedResponse" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PagedResponse.#ctor(System.Int32)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.PagedResponse" /> class.
+            </summary>
+      <param name="totalCount">The total count of all data items.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PagedResponse.TotalCount">
+      <summary>
+            Gets or sets the total count of all data items.
+            </summary>
+      <value>The zero-based count of all data items. The default value is zero.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.EndpointReference">
+      <summary>
+            Represents an endpoint reference.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.EndpointReference.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.EndpointReference" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.EndpointReference.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.EndpointReference" /> class.
+            </summary>
+      <param name="address">The URL address for the endpoint.</param>
+      <requires csharp="!IsNullOrEmpty(address)" vb="Not IsNullOrEmpty(address)">!string.IsNullOrEmpty(address)</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.EndpointReference.#ctor(System.Uri)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.EndpointReference" /> class.
+            </summary>
+      <param name="address">The <see cref="T:System.Uri">URL</see> address for the endpoint.</param>
+      <requires csharp="address != (System.Uri)null" vb="address &lt;&gt; ((System.Uri)Nothing) ">address != (System.Uri)null</requires>
+    </member>
+    <member name="P:Microsoft.SupplyChain.EndpointReference.Address">
+      <summary>
+            Gets or sets the address for the endpoint.
+            </summary>
+      <value>A <see cref="T:Microsoft.SupplyChain.SerializableUri">URL</see> for the address endpoint.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.ExceptionMessage">
+      <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ExceptionMessage.ResourceManager">
+      <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ExceptionMessage.Culture">
+      <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ExceptionMessage.CannotConvertDefaultValue">
+      <summary>
+              Looks up a localized string similar to The default value '{0}' on property {2}.{3} cannot be converted to type {1}..
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ExceptionMessage.CannotConvertString">
+      <summary>
+              Looks up a localized string similar to The value '{0}' cannot be converted to type {1}..
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ExceptionMessage.ExpressionMustReferToPropertyOfDeclaredType">
+      <summary>
+              Looks up a localized string similar to The expression '{0}' must refer to a property declared by type {1}..
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ExceptionMessage.ExpresssionMustReferToInstanceProperty">
+      <summary>
+              Looks up a localized string similar to The expression '{0}' must refer to a public, instance property..
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ExceptionMessage.ExpresssionMustReferToProperty">
+      <summary>
+              Looks up a localized string similar to The expression '{0}' must refer to a property..
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ExceptionMessage.InvalidPuid">
+      <summary>
+              Looks up a localized string similar to The value '{0}' is not a valid Passport Unique Identifier (PUID). The value must be 16 hexadecimal characters..
+            </summary>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.Description">
+      <summary>
+            Represents text localizable fault description.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.Description.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.Description" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.Description.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.Description" /> class.
+            </summary>
+      <param name="text">The description text.</param>
+      <remarks>This constructor assumes the text is associated with the
+            <see cref="P:CultureInfo.CurrentCulture">current culture</see>.</remarks>
+      <requires csharp="text != null" vb="text &lt;&gt; Nothing">text != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.Description.#ctor(System.String,System.Globalization.CultureInfo)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.Description" /> class.
+            </summary>
+      <param name="text">The description text.</param>
+      <param name="culture">The <see cref="T:System.Globalization.CultureInfo">culture</see> associated with the description text.</param>
+      <requires csharp="text != null" vb="text &lt;&gt; Nothing">text != null</requires>
+      <requires csharp="culture != null" vb="culture &lt;&gt; Nothing">culture != null</requires>
+      <requires csharp="!IsNullOrEmpty(culture.IetfLanguageTag)" vb="Not IsNullOrEmpty(culture.IetfLanguageTag)">!string.IsNullOrEmpty(culture.IetfLanguageTag)</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.Description.#ctor(System.String,System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.Description" /> class.
+            </summary>
+      <param name="text">The description text.</param>
+      <param name="languageCode">The RFC 4646 language code for the description text.</param>
+      <requires csharp="text != null" vb="text &lt;&gt; Nothing">text != null</requires>
+      <requires csharp="!IsNullOrEmpty(languageCode)" vb="Not IsNullOrEmpty(languageCode)">!string.IsNullOrEmpty(languageCode)</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.Description.Equals(System.Object)">
+      <summary>
+            Returns text value indicating whether this instance and text specified object represent the same value.
+            </summary>
+      <param name="obj">An object to compare to this instance.</param>
+      <returns>True if <paramref name="obj" /> is equal to this instance; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.Description.GetHashCode">
+      <summary>
+            Returns text hash code for the current instance.
+            </summary>
+      <returns>The hash code for the current instance.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.Description.op_Equality(Microsoft.SupplyChain.Faults.Description,Microsoft.SupplyChain.Faults.Description)">
+      <summary>
+            Returns an indication whether the values of two specified <see cref="T:Microsoft.SupplyChain.Faults.Description" /> objects are equal.
+            </summary>
+      <param name="text">A <see cref="T:Microsoft.SupplyChain.Faults.Description" /> object to compare.</param>
+      <param name="otherText">A <see cref="T:Microsoft.SupplyChain.Faults.Description" /> object to compare to.</param>
+      <returns>True if <paramref name="text" /> and <paramref name="otherText" /> are equal; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.Description.op_Inequality(Microsoft.SupplyChain.Faults.Description,Microsoft.SupplyChain.Faults.Description)">
+      <summary>
+            Returns an indication whether the values of two specified <see cref="T:Microsoft.SupplyChain.Faults.Description" /> objects are not equal.
+            </summary>
+      <param name="text">The <see cref="T:Microsoft.SupplyChain.Faults.Description" /> object to compare.</param>
+      <param name="otherText">The <see cref="T:Microsoft.SupplyChain.Faults.Description" /> object to compare to.</param>
+      <returns>True if <paramref name="text" /> and <paramref name="otherText" /> are not equal; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.Description.Equals(Microsoft.SupplyChain.Faults.Description)">
+      <summary>
+            Returns text value indicating whether this instance and text specified <see cref="T:Microsoft.SupplyChain.Faults.Description" /> object represent the same value.
+            </summary>
+      <param name="other">A <see cref="T:Microsoft.SupplyChain.Faults.Description" /> object to compare to this instance.</param>
+      <returns>True if <paramref name="other" /> is equal to this instance; otherwise, false.</returns>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.Description.Text">
+      <summary>
+            Gets or sets the description text.
+            </summary>
+      <value>The description text.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.Description.LanguageCode">
+      <summary>
+            Gets or sets the RFC 4646 language code.
+            </summary>
+      <value>The RFC 4646 language code expressed as language and optionally country (ISO 3166-1).</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.ErrorCode">
+      <summary>
+            Represents a fault error code.
+            </summary>
+    </member>
+    <member name="T:Microsoft.SupplyChain.XmlSerializable">
+      <summary>
+            Represents the base implementation for a XML serializable object.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlSerializable.ReadXml(System.Xml.XmlReader)">
+      <summary>
+            Deserializes the current instance from the specified XML reader.
+            </summary>
+      <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to deserialize the current instance from.</param>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlSerializable.WriteXml(System.Xml.XmlWriter)">
+      <summary>
+            Serializes the current instance to the specified XML writer.
+            </summary>
+      <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to serialize the current instance to.</param>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.ErrorCode.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.ErrorCode" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.ErrorCode.#ctor(System.Uri)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.ErrorCode" /> class.
+            </summary>
+      <param name="dialect">The <see cref="T:System.Uri">URI</see> for the error code dialect.</param>
+      <requires csharp="dialect != (System.Uri)null" vb="dialect &lt;&gt; ((System.Uri)Nothing) ">dialect != (System.Uri)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.ErrorCode.#ctor(System.Uri,System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.ErrorCode" /> class.
+            </summary>
+      <param name="dialect">The <see cref="T:System.Uri">URI</see> for the error code dialect.</param>
+      <param name="value">The error code value.</param>
+      <requires csharp="dialect != (System.Uri)null" vb="dialect &lt;&gt; ((System.Uri)Nothing) ">dialect != (System.Uri)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.ErrorCode.ExportSchema(System.Xml.Schema.XmlSchemaSet)">
+      <summary>
+            Gets the XML schema type for the current type.
+            </summary>
+      <param name="schemas">The set of <see cref="T:System.Xml.Schema.XmlSchemaSet">XML schemas</see> that contains the schema type.</param>
+      <returns>The corresponding <see cref="T:System.Xml.Schema.XmlSchemaType">XML schema type</see>.</returns>
+      <requires csharp="schemas != null" vb="schemas &lt;&gt; Nothing">schemas != null</requires>
+      <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.ErrorCode.ReadXml(System.Xml.XmlReader)">
+      <summary>
+            Deserializes the current instance from the specified XML reader.
+            </summary>
+      <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to deserialize the current instance from.</param>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.ErrorCode.WriteXml(System.Xml.XmlWriter)">
+      <summary>
+            Serializes the current instance to the specified XML writer.
+            </summary>
+      <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to serialize the current instance to.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.ErrorCode.Dialect">
+      <summary>
+            Gets or sets the dialect for the error code.
+            </summary>
+      <value>A <see cref="T:System.Uri">URI</see> representing the dialect for the error code.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.ErrorCode.Value">
+      <summary>
+            Gets or sets the value of the error code.
+            </summary>
+      <value>The error code value.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.IdentityReferenceFault">
+      <summary>
+            Represents the fault information returned when an <see cref="T:Microsoft.SupplyChain.IdentityReference">identity reference</see> problem is encountered.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.IdentityReferenceFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.IdentityReferenceFault" /> class.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.IdentityReferenceFault.Identity">
+      <summary>
+            Gets or sets the identity reference associated with the fault.
+            </summary>
+      <value>The associated <see cref="T:Microsoft.SupplyChain.IdentityReference">identity</see>. This property can be null.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.InvalidIdentityReferenceFault">
+      <summary>
+            Represents the fault information returned when an invalid
+            <see cref="T:Microsoft.SupplyChain.IdentityReference">identity reference</see> is encountered.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.InvalidIdentityReferenceFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.InvalidIdentityReferenceFault" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.InvalidIdentityReferenceFault.#ctor(Microsoft.SupplyChain.IdentityReference)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.InvalidIdentityReferenceFault" /> class.
+            </summary>
+      <param name="identity">The invalid <see cref="T:Microsoft.SupplyChain.IdentityReference">identity</see>.</param>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Faults.UnsupportedIdentityReferenceFault">
+      <summary>
+            Represents the fault information returned when an unsupported
+            <see cref="T:Microsoft.SupplyChain.IdentityReference">identity reference</see> is encountered.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.UnsupportedIdentityReferenceFault.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.UnsupportedIdentityReferenceFault" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.Faults.UnsupportedIdentityReferenceFault.#ctor(Microsoft.SupplyChain.IdentityReference)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.Faults.UnsupportedIdentityReferenceFault" /> class.
+            </summary>
+      <param name="identity">The unsupported <see cref="T:Microsoft.SupplyChain.IdentityReference">identity</see>.</param>
+    </member>
+    <member name="T:Microsoft.SupplyChain.PagedRequest">
+      <summary>
+            Represents a paged data request.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PagedRequest.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.PagedRequest" /> class.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PagedRequest.PageIndex">
+      <summary>
+            Gets or sets the requested data page index.
+            </summary>
+      <value>The zero-based index of the requested data page.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PagedRequest.PageSize">
+      <summary>
+            Gets or sets the requested number of items per data page.
+            </summary>
+      <value>The one-based number of items per data page.  The default value is 25.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PagedRequest.StartIndex">
+      <summary>
+            Gets the calculated start index of the request.
+            </summary>
+      <value>The zero-based start index for the request calculated as <see cref="P:Microsoft.SupplyChain.PagedRequest.PageIndex" /> * <see cref="P:Microsoft.SupplyChain.PagedRequest.PageSize" />.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.PassportUniqueIdentifier">
+      <summary>
+            Represents a Windows Live ID unique identifier (PUID).
+            </summary>
+      <remarks>Windows Live ID was formally known as Microsoft Passport.</remarks>
+    </member>
+    <member name="F:Microsoft.SupplyChain.PassportUniqueIdentifier.Anonymous">
+      <summary>
+            Get a Windows Live ID unique identifier (PUID) that represents an anonymous identity.
+            </summary>
+      <remarks>This field is functionally equivalent to an empty PUID.</remarks>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.#ctor(System.Int64)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier" /> struct.
+            </summary>
+      <param name="value">The 8-byte value of the PUID.</param>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.ExportSchema(System.Xml.Schema.XmlSchemaSet)">
+      <summary>
+            Gets the XML schema qualified name for the current type.
+            </summary>
+      <param name="schemas">The set of <see cref="T:System.Xml.Schema.XmlSchemaSet">XML schemas</see> that contains the qualified name.</param>
+      <returns>The corresponding <see cref="T:System.Xml.XmlQualifiedName">XML qualified name</see>.</returns>
+      <requires csharp="schemas != null" vb="schemas &lt;&gt; Nothing">schemas != null</requires>
+      <ensures csharp="result != (System.Xml.XmlQualifiedName)null" vb="result &lt;&gt; ((System.Xml.XmlQualifiedName)Nothing) ">result != (System.Xml.XmlQualifiedName)null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.ReadXml(System.Xml.XmlReader)">
+      <summary>
+            Deserializes the current instance from the specified XML reader.
+            </summary>
+      <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to deserialize the current instance from.</param>
+      <requires csharp="reader != null" vb="reader &lt;&gt; Nothing">reader != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.WriteXml(System.Xml.XmlWriter)">
+      <summary>
+            Serializes the current instance to the specified XML writer.
+            </summary>
+      <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to serialize the current instance to.</param>
+      <requires csharp="writer != null" vb="writer &lt;&gt; Nothing">writer != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.Equals(System.Object)">
+      <summary>
+            Returns a value indicating whether the current instance equals the specified object.
+            </summary>
+      <param name="obj">The <see cref="T:System.Object">object</see> to evaluate.</param>
+      <returns>True if the current instance equals the specified object; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.GetHashCode">
+      <summary>
+            Returns a hash code for the current instance.
+            </summary>
+      <returns>A hash code.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.ToString">
+      <summary>
+            Returns the Passport unique identifier in its 8-byte hexadecimal form.
+            </summary>
+      <returns>The Passport unique identifier as a hexadecimal <see cref="T:System.String">string</see>.</returns>
+      <remarks>The returned hexadecimal value is always 16 characters.</remarks>
+      <ensures inheritedFrom="M:System.ValueType.ToString" inheritedFromTypeName="ValueType" csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+      <ensures inheritedFrom="M:System.Object.ToString" inheritedFromTypeName="Object" csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.op_Implicit(Microsoft.SupplyChain.PassportUniqueIdentifier)~System.Int64">
+      <summary>
+            Implicitly converts a Passport unique identifier into an 8-byte integer.
+            </summary>
+      <param name="puid">The <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">Passport unique identifier</see> to convert.</param>
+      <returns>The <see cref="T:System.Int64">8-byte</see> equivalent integer.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.op_Explicit(System.Int64)~Microsoft.SupplyChain.PassportUniqueIdentifier">
+      <summary>
+            Explicitly converts an 8-byte integer into a Passport unique identifier.
+            </summary>
+      <param name="value">The <see cref="T:System.Int64">8-byte integer</see> to convert.</param>
+      <returns>The equivalent <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">Passport unique identifier</see>.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.op_Equality(Microsoft.SupplyChain.PassportUniqueIdentifier,Microsoft.SupplyChain.PassportUniqueIdentifier)">
+      <summary>
+            Evaluates the equality of two <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">Passport unique identifiers</see>.
+            </summary>
+      <param name="puid1">The first <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">Passport unique identifier</see> to evaluate.</param>
+      <param name="puid2">The second <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">Passport unique identifier</see> to evaluate.</param>
+      <returns>True if the values are equal; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.op_Inequality(Microsoft.SupplyChain.PassportUniqueIdentifier,Microsoft.SupplyChain.PassportUniqueIdentifier)">
+      <summary>
+            Evaluates the inequality of two <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">Passport unique identifiers</see>.
+            </summary>
+      <param name="puid1">The first <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">Passport unique identifier</see> to evaluate.</param>
+      <param name="puid2">The second <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">Passport unique identifier</see> to evaluate.</param>
+      <returns>True if the values are not equal; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.Equals(Microsoft.SupplyChain.PassportUniqueIdentifier)">
+      <summary>
+            Returns a value indicating whether the current instance equals the specified object.
+            </summary>
+      <param name="other">The <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">Passport unique identifier</see> to evaluate.</param>
+      <returns>True if the current instance equals the specified object; otherwise, false.</returns>
+    </member>
+    <member name="T:Microsoft.SupplyChain.PassportUniqueIdentifierTypeConverter">
+      <summary>
+            Represents a <see cref="T:System.ComponentModel.TypeConverter">type converter</see> for Passport unique identifiers (PUIDs).
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifierTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+      <summary>
+            Returns a value indicating whether the type converter can convert the specified <see cref="T:System.Type">type</see>.
+            </summary>
+      <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> associated with the conversion.</param>
+      <param name="sourceType">The source <see cref="T:System.Type">type</see> to be converted.</param>
+      <returns>True if <paramref name="sourceType" /> can be converted; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifierTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+      <summary>
+            Returns a value indicating whether the type converter can convert to the specified <see cref="T:System.Type">type</see>.
+            </summary>
+      <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> associated with the conversion.</param>
+      <param name="destinationType">The destination <see cref="T:System.Type">type</see> to convert to.</param>
+      <returns>True if <paramref name="destinationType" /> can be converted; otherwise, false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifierTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+      <summary>
+            Converts the specified value to a <see cref="T:System.Type">type</see> object.
+            </summary>
+      <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> associated with the conversion.</param>
+      <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> associated with the conversion.</param>
+      <param name="value">The <see cref="T:System.Object">object</see> to be converted.</param>
+      <returns>The converted <see cref="T:System.Type">type</see> object.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifierTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+      <summary>
+            Converts the specified value to the requested type.
+            </summary>
+      <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> associated with the conversion.</param>
+      <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> associated with the conversion.</param>
+      <param name="value">The <see cref="T:System.Object">object</see> to be converted.</param>
+      <param name="destinationType">The destintation conversion <see cref="T:System.Type">type</see>.</param>
+      <returns>The converted <see cref="T:System.Object">object</see>.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifierTypeConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>
+            Returns a value indicating whether the type converter supports properties.
+            </summary>
+      <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> associated with the conversion.</param>
+      <returns>This method always returns false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifierTypeConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>
+            Returns a value indicating whether the type converter supports standard values.
+            </summary>
+      <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> associated with the conversion.</param>
+      <returns>This method always returns false.</returns>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifierTypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)">
+      <summary>
+            Returns a value indicating whether the specified value is valid.
+            </summary>
+      <param name="context">The evaluation <see cref="T:System.ComponentModel.ITypeDescriptorContext">context</see>.</param>
+      <param name="value">The value to validate.</param>
+      <returns>True if the specified <paramref name="value" /> is valid; otherwise, false.</returns>
+    </member>
+    <member name="T:Microsoft.SupplyChain.PersonalName">
+      <summary>
+            Represents the proper name identifying an individual person.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PersonalName.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.PersonalName" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PersonalName.#ctor(System.String,System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.PersonalName" /> class.
+            </summary>
+      <param name="firstName">The given name of the person.</param>
+      <param name="lastName">The family or surname of the person.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PersonalName.Honorific">
+      <summary>
+            Gets or sets title prefixing a person's name.
+            </summary>
+      <value>The title prefixing a person's name
+            (e.g. Miss, Ms., Mr, Sir, Mrs, Dr and Lord).</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PersonalName.FirstName">
+      <summary>
+            Gets or sets the given name of a person.
+            </summary>
+      <value>The given name of a person.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PersonalName.MiddleName">
+      <summary>
+            Gets or sets the middle name of a person.
+            </summary>
+      <value>The middle name of a person.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PersonalName.LastName">
+      <summary>
+            Gets or sets the family or surname of a person.
+            </summary>
+      <value>The family or surname of a person.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PersonalName.GenerationalTitle">
+      <summary>
+            Gets or sets the generational suffix used to distinguish
+            persons who share the same name within a family.
+            </summary>
+      <value>The generational suffix used to distinguish
+            persons who share the same name within a family
+            (e.g. Junior, Jr, Senior, Sr, II).</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PersonalName.Suffix">
+      <summary>
+            Gets or sets the academic, honorary, or professional
+            suffix which indicates a person's position,
+            educational degree, accreditation, office,
+            or honor.
+            </summary>
+      <value>The academic, honorary, or professional
+            suffix which indicates a person's position,
+            educational degree, accreditation, office,
+            or honor.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.RetailCustomerIdentity">
+      <summary>
+            Represents a retail customer identity.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.RetailCustomerIdentity.RetailerId">
+      <summary>
+            Gets or sets the unique retailer identifier.
+            </summary>
+      <value>The retailer identifier.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.RetailCustomerIdentity.Retailer">
+      <summary>
+            Gets or sets the name of the retailer.
+            </summary>
+      <value>The retailer name.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.RetailCustomerIdentity.StoreId">
+      <summary>
+            Gets or sets the unique retail store identifier.
+            </summary>
+      <value>The retail store identifier.</value>
+      <remarks>The retail store identifier may also be the retail store number.</remarks>
+    </member>
+    <member name="P:Microsoft.SupplyChain.RetailCustomerIdentity.ChannelId">
+      <summary>
+            Gets or sets the unique retail channel identifier.
+            </summary>
+      <value>The retail channel identifier.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.PhoneNumber">
+      <summary>
+            Represents a telephone number.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PhoneNumber.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.PhoneNumber" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PhoneNumber.#ctor(System.String,System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.PhoneNumber" /> class.
+            </summary>
+      <param name="areaCode">The telephone number area code.</param>
+      <param name="number">The telephone (national) number.</param>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PhoneNumber.#ctor(System.String,System.String,System.String,System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.PhoneNumber" /> class.
+            </summary>
+      <param name="countryCode">The telephone number country code.</param>
+      <param name="areaCode">The telephone number area code.</param>
+      <param name="number">The telephone (national) number.</param>
+      <param name="extension">The telephone number extension.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PhoneNumber.CountryCode">
+      <summary>
+            Gets or sets the telephone number country code.
+            </summary>
+      <value>The telephone number country code. The default value is "1".</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PhoneNumber.AreaCode">
+      <summary>
+            Gets or sets the telephone number area code.
+            </summary>
+      <value>The telephone number area code.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PhoneNumber.Number">
+      <summary>
+            Gets or sets the telephone number.
+            </summary>
+      <value>The telephone (national) number.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PhoneNumber.Extension">
+      <summary>
+            Gets or sets the telephone number extension.
+            </summary>
+      <value>The telephone number extension.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.TitledMessage">
+      <summary>
+            Represents a text message with an associated title.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.TitledMessage.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.TitledMessage" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.TitledMessage.#ctor(System.String,System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.TitledMessage" /> class.
+            </summary>
+      <param name="title">The message title.</param>
+      <param name="text">The message text.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.TitledMessage.Title">
+      <summary>
+            Gets or sets the message title.
+            </summary>
+      <value>The message title.</value>
+    </member>
+    <member name="P:Microsoft.SupplyChain.TitledMessage.Text">
+      <summary>
+            Gets or sets the message text.
+            </summary>
+      <value>The message text.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.TypeExtensions">
+      <summary>
+            Provides extension methods for the <see cref="T:System.Type" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.TypeExtensions.GetAttribute``1(System.Reflection.MemberInfo)">
+      <summary>
+            Gets a strongly-typed attribute for the specified member.
+            </summary>
+      <typeparam name="TAttribute">The <see cref="T:System.Type">type</see> of <see cref="T:System.Attribute">attribute</see> to retrieve.</typeparam>
+      <param name="member">The <see cref="T:System.Reflection.MemberInfo">member</see> to get the attribute for.</param>
+      <returns>The requested <see cref="T:System.Attribute">attribute</see> or null if no match is found.</returns>
+      <requires csharp="member != (System.Reflection.MemberInfo)null" vb="member &lt;&gt; ((System.Reflection.MemberInfo)Nothing) ">member != (System.Reflection.MemberInfo)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.TypeExtensions.GetAttribute``1(System.Reflection.MemberInfo,System.Boolean)">
+      <summary>
+            Gets a strongly-typed attribute for the specified member.
+            </summary>
+      <typeparam name="TAttribute">The <see cref="T:System.Type">type</see> of <see cref="T:System.Attribute">attribute</see> to retrieve.</typeparam>
+      <param name="member">The <see cref="T:System.Reflection.MemberInfo">member</see> to get the attribute for.</param>
+      <param name="inherit">Indicates whether to search the member's inheritance chain for attributes.</param>
+      <returns>The requested <see cref="T:System.Attribute">attribute</see> or null if no match is found.</returns>
+      <requires csharp="member != (System.Reflection.MemberInfo)null" vb="member &lt;&gt; ((System.Reflection.MemberInfo)Nothing) ">member != (System.Reflection.MemberInfo)null</requires>
+      <ensures csharp="(object)result != null" vb="((Object)result) &lt;&gt; Nothing">(object)result != null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.TypeExtensions.GetAttributes``1(System.Reflection.MemberInfo)">
+      <summary>
+            Gets the strongly-typed attributes for the specified member.
+            </summary>
+      <typeparam name="TAttribute">The <see cref="T:System.Type">type</see> of <see cref="T:System.Attribute">attribute</see> to retrieve.</typeparam>
+      <param name="member">The <see cref="T:System.Reflection.MemberInfo">member</see> to get the attributes for.</param>
+      <returns>A <see cref="T:System.Collections.Generic.IList`1">list</see> of <see cref="T:System.Attribute">attributes</see>.</returns>
+      <requires csharp="member != (System.Reflection.MemberInfo)null" vb="member &lt;&gt; ((System.Reflection.MemberInfo)Nothing) ">member != (System.Reflection.MemberInfo)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.TypeExtensions.GetAttributes``1(System.Reflection.MemberInfo,System.Boolean)">
+      <summary>
+            Gets the strongly-typed attributes for the specified member.
+            </summary>
+      <typeparam name="TAttribute">The <see cref="T:System.Type">type</see> of <see cref="T:System.Attribute">attribute</see> to retrieve.</typeparam>
+      <param name="member">The <see cref="T:System.Reflection.MemberInfo">member</see> to get the attributes for.</param>
+      <param name="inherit">Indicates whether to search the member's inheritance chain for attributes.</param>
+      <returns>A <see cref="T:System.Collections.Generic.IList`1">list</see> of <see cref="T:System.Attribute">attributes</see>.</returns>
+      <requires csharp="member != (System.Reflection.MemberInfo)null" vb="member &lt;&gt; ((System.Reflection.MemberInfo)Nothing) ">member != (System.Reflection.MemberInfo)null</requires>
+      <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.TypeExtensions.GetTypeConverter(System.Reflection.PropertyInfo)">
+      <summary>
+            Returns the type converter associated with the property.
+            </summary>
+      <param name="property">The <see cref="T:System.Reflection.PropertyInfo">property</see> to get the type converter for.</param>
+      <returns>The <see cref="T:System.ComponentModel.TypeConverter">type converter</see> associated with the property.</returns>
+      <requires csharp="property != (System.Reflection.PropertyInfo)null" vb="property &lt;&gt; ((System.Reflection.PropertyInfo)Nothing) ">property != (System.Reflection.PropertyInfo)null</requires>
+      <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.TypeExtensions.GetDefaultValue(System.Reflection.PropertyInfo)">
+      <summary>
+            Returns the default value associated with the property.
+            </summary>
+      <param name="property">The <see cref="T:System.Reflection.PropertyInfo">property</see> to get the default value for.</param>
+      <returns>The default value for the property.</returns>
+      <requires csharp="property != (System.Reflection.PropertyInfo)null" vb="property &lt;&gt; ((System.Reflection.PropertyInfo)Nothing) ">property != (System.Reflection.PropertyInfo)null</requires>
+    </member>
+    <member name="T:Microsoft.SupplyChain.UrlScheme">
+      <summary>
+            Represents the possible uniform resource locator (URL) schemes.
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.UrlScheme.Http">
+      <summary>
+            Specifies that the URL is accessed through the Hypertext Transfer Protocol (HTTP).
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.UrlScheme.Https">
+      <summary>
+            Specifies that the URL is accessed through the Secure Hypertext Transfer Protocol (HTTPS).
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.UrlScheme.Ftp">
+      <summary>
+            Specifies that the URL is accessed through the File Transfer Protocol (FTP).
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.UrlScheme.NetTcp">
+      <summary>
+            Specifies that the URL is accessed through the NetTcp scheme. 
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.UrlScheme.File">
+      <summary>
+            Specifies that the URL is a pointer to a file.
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.UrlScheme.Data">
+      <summary>
+            Specifies that the URL is in-line.
+            </summary>
+    </member>
+    <member name="T:Microsoft.SupplyChain.ValidationMessage">
+      <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ValidationMessage.ResourceManager">
+      <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ValidationMessage.Culture">
+      <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ValidationMessage.Iso3166IdRequired">
+      <summary>
+              Looks up a localized string similar to At least one ISO-3166 identifier must be specified..
+            </summary>
+    </member>
+    <member name="P:Microsoft.SupplyChain.ValidationMessage.Iso4217IdRequired">
+      <summary>
+              Looks up a localized string similar to At least one ISO-4217 identifier must be specified..
+            </summary>
+    </member>
+    <member name="T:Microsoft.SupplyChain.WindowsLiveIdentity">
+      <summary>
+            Represents a Windows Live identity.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.WindowsLiveIdentity.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.WindowsLiveIdentity" /> class.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.WindowsLiveIdentity.#ctor(System.String,Microsoft.SupplyChain.PassportUniqueIdentifier)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.WindowsLiveIdentity" /> class.
+            </summary>
+      <param name="name">The name of the identity. This is typically an e-mail address.</param>
+      <param name="passportUniqueId">The Windows Live ID <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">PUID</see> of the identity.</param>
+    </member>
+    <member name="M:Microsoft.SupplyChain.WindowsLiveIdentity.#ctor(System.String,System.String,Microsoft.SupplyChain.PassportUniqueIdentifier)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.SupplyChain.WindowsLiveIdentity" /> class.
+            </summary>
+      <param name="name">The name of the identity. This is typically an e-mail address.</param>
+      <param name="displayName">The display name of the identity.</param>
+      <param name="passportUniqueId">The Windows Live ID <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">PUID</see> of the identity.</param>
+    </member>
+    <member name="P:Microsoft.SupplyChain.WindowsLiveIdentity.PassportUniqueId">
+      <summary>
+            Gets or sets the Passport unique identifier of the identity.
+            </summary>
+      <value>The <see cref="T:Microsoft.SupplyChain.PassportUniqueIdentifier">Passport unique identifier</see> of the identity.</value>
+    </member>
+    <member name="T:Microsoft.SupplyChain.XmlExtensions">
+      <summary>
+            Provides extensions methods for XML manipulation.
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlExtensions.SetProperty``2(``0,System.Linq.Expressions.Expression{System.Func{``1}},System.Xml.XmlReader)">
+      <summary>
+            Sets the value the property defined by the specified expression from the provided XML reader.
+            </summary>
+      <typeparam name="TObject">The <see cref="T:System.Type">type</see> of object to set the property value for.</typeparam>
+      <typeparam name="TValue">The <see cref="T:System.Type">type</see> of property value.</typeparam>
+      <param name="obj">The <typeparamref name="TObject">object</typeparamref> to set the property for.</param>
+      <param name="propertyExpression">The <see cref="T:System.Linq.Expressions.Expression`1">expression</see> representing the property to set.</param>
+      <param name="reader">The <see cref="T:System.Xml.XmlReader">XML reader</see> to set the value from.</param>
+      <requires csharp="(object)obj != null" vb="((Object)obj) &lt;&gt; Nothing">(object)obj != null</requires>
+      <requires csharp="propertyExpression != null" vb="propertyExpression &lt;&gt; Nothing">propertyExpression != null</requires>
+      <requires csharp="reader != null" vb="reader &lt;&gt; Nothing">reader != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlExtensions.WriteProperty``2(``0,System.Linq.Expressions.Expression{System.Func{``1}},System.Xml.XmlWriter)">
+      <summary>
+            Writes the value of the property defined by the specified expression into the provided XML writer.
+            </summary>
+      <typeparam name="TObject">The <see cref="T:System.Type">type</see> of object to write the property value for.</typeparam>
+      <typeparam name="TValue">The <see cref="T:System.Type">type</see> of property value.</typeparam>
+      <param name="obj">The <typeparamref name="TObject">object</typeparamref> to write the property for.</param>
+      <param name="propertyExpression">The <see cref="T:System.Linq.Expressions.Expression`1">expression</see> representing the property to write.</param>
+      <param name="writer">The <see cref="T:System.Xml.XmlWriter">XML writer</see> to write the value into.</param>
+      <requires csharp="(object)obj != null" vb="((Object)obj) &lt;&gt; Nothing">(object)obj != null</requires>
+      <requires csharp="propertyExpression != null" vb="propertyExpression &lt;&gt; Nothing">propertyExpression != null</requires>
+      <requires csharp="writer != null" vb="writer &lt;&gt; Nothing">writer != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlExtensions.WriteAttributeString(System.Xml.XmlWriter,System.Xml.Linq.XName,System.String)">
+      <summary>
+            Writes an attribute with the specified qualified name and value.
+            </summary>
+      <param name="writer">The extended <see cref="T:System.Xml.XmlWriter">XML writer</see>.</param>
+      <param name="qualifiedName">The <see cref="T:System.Xml.Linq.XName">qualified name</see> of the attribute to write.</param>
+      <param name="value">The value to write.</param>
+      <requires csharp="writer != null" vb="writer &lt;&gt; Nothing">writer != null</requires>
+      <requires csharp="qualifiedName != (System.Xml.Linq.XName)null" vb="qualifiedName &lt;&gt; ((System.Xml.Linq.XName)Nothing) ">qualifiedName != (System.Xml.Linq.XName)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlExtensions.WriteElementString(System.Xml.XmlWriter,System.Xml.Linq.XName,System.String)">
+      <summary>
+            Writes an element with the specified qualified name and value.
+            </summary>
+      <param name="writer">The extended <see cref="T:System.Xml.XmlWriter">XML writer</see>.</param>
+      <param name="qualifiedName">The <see cref="T:System.Xml.Linq.XName">qualified name</see> of the element to write.</param>
+      <param name="value">The value to write.</param>
+      <requires csharp="writer != null" vb="writer &lt;&gt; Nothing">writer != null</requires>
+      <requires csharp="qualifiedName != (System.Xml.Linq.XName)null" vb="qualifiedName &lt;&gt; ((System.Xml.Linq.XName)Nothing) ">qualifiedName != (System.Xml.Linq.XName)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlExtensions.WriteStartAttribute(System.Xml.XmlWriter,System.Xml.Linq.XName)">
+      <summary>
+            Writes the start of an attribute with the specified qualified name.
+            </summary>
+      <param name="writer">The extended <see cref="T:System.Xml.XmlWriter">XML writer</see>.</param>
+      <param name="qualifiedName">The <see cref="T:System.Xml.Linq.XName">qualified name</see> of the attribute to write.</param>
+      <requires csharp="writer != null" vb="writer &lt;&gt; Nothing">writer != null</requires>
+      <requires csharp="qualifiedName != (System.Xml.Linq.XName)null" vb="qualifiedName &lt;&gt; ((System.Xml.Linq.XName)Nothing) ">qualifiedName != (System.Xml.Linq.XName)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlExtensions.WriteStartElement(System.Xml.XmlWriter,System.Xml.Linq.XName)">
+      <summary>
+            Writes the start of an element with the specified qualified name.
+            </summary>
+      <param name="writer">The extended <see cref="T:System.Xml.XmlWriter">XML writer</see>.</param>
+      <param name="qualifiedName">The <see cref="T:System.Xml.Linq.XName">qualified name</see> of the element to write.</param>
+      <requires csharp="writer != null" vb="writer &lt;&gt; Nothing">writer != null</requires>
+      <requires csharp="qualifiedName != (System.Xml.Linq.XName)null" vb="qualifiedName &lt;&gt; ((System.Xml.Linq.XName)Nothing) ">qualifiedName != (System.Xml.Linq.XName)null</requires>
+    </member>
+    <member name="T:Microsoft.SupplyChain.Xmlns">
+      <summary>
+            Provides XML namespace constants.
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.Xmlns.SupplyChain">
+      <summary>
+            http://schemas.microsoft.com/supplychain/2011/12
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.Xmlns.Xml">
+      <summary>
+            http://www.w3.org/XML/1998/namespace
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.Xmlns.Xsd">
+      <summary>
+            http://www.w3.org/2001/XMLSchema
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.Xmlns.XsdInstance">
+      <summary>
+            http://www.w3.org/2001/XMLSchema-instance
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.Xmlns.WSBaseFaults">
+      <summary>
+            http://docs.oasis-open.org/wsrf/bf-2
+            </summary>
+    </member>
+    <member name="F:Microsoft.SupplyChain.Xmlns.WSAddressing">
+      <summary>
+            http://www.w3.org/2005/08/addressing
+            </summary>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PropertyMapping`2.#ctor(System.Reflection.PropertyInfo,System.Xml.Linq.XNamespace)">
+      <requires csharp="property != (System.Reflection.PropertyInfo)null" vb="property &lt;&gt; ((System.Reflection.PropertyInfo)Nothing) ">property != (System.Reflection.PropertyInfo)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PropertyMapping`2.CreatePropertySetter(System.Reflection.PropertyInfo)">
+      <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PropertyMapping`2.GetConversionFunc(System.Reflection.PropertyInfo)">
+      <ensures csharp="(() =&gt; {&#xD;&#xA;    {&#xD;&#xA;        new Microsoft.SupplyChain.PropertyMapping&lt;TObject, TValue&gt;.&lt;&gt;c__DisplayClass7().property = property;&#xD;&#xA;    }&#xD;&#xA;    return result != null; })()" vb="(() =&gt; {&#xD;&#xA;    New Microsoft.SupplyChain.PropertyMapping(Of TObject, TValue).&lt;&gt;c__DisplayClass7().property = property&#xD;&#xA;    return result &lt;&gt; Nothing; })()">(() =&gt; {
+    {
+        new Microsoft.SupplyChain.PropertyMapping&lt;TObject, TValue&gt;.&lt;&gt;c__DisplayClass7().property = property;
+    }
+    return result != null; })()</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PropertyMapping`2.GetQNameFromAttribute(System.Xml.Serialization.XmlAttributeAttribute,System.String,System.String)">
+      <requires csharp="attribute != null" vb="attribute &lt;&gt; Nothing">attribute != null</requires>
+      <requires csharp="defaultName != null" vb="defaultName &lt;&gt; Nothing">defaultName != null</requires>
+      <requires csharp="defaultXmlns != null" vb="defaultXmlns &lt;&gt; Nothing">defaultXmlns != null</requires>
+      <ensures csharp="result != (System.Xml.Linq.XName)null" vb="result &lt;&gt; ((System.Xml.Linq.XName)Nothing) ">result != (System.Xml.Linq.XName)null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PropertyMapping`2.GetQNameFromElement(System.Xml.Serialization.XmlElementAttribute,System.String,System.String)">
+      <requires csharp="attribute != null" vb="attribute &lt;&gt; Nothing">attribute != null</requires>
+      <requires csharp="defaultName != null" vb="defaultName &lt;&gt; Nothing">defaultName != null</requires>
+      <requires csharp="defaultXmlns != null" vb="defaultXmlns &lt;&gt; Nothing">defaultXmlns != null</requires>
+      <ensures csharp="result != (System.Xml.Linq.XName)null" vb="result &lt;&gt; ((System.Xml.Linq.XName)Nothing) ">result != (System.Xml.Linq.XName)null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PropertyMapping`2.GetQNameFromArray(System.Xml.Serialization.XmlArrayAttribute,System.String,System.String)">
+      <requires csharp="attribute != null" vb="attribute &lt;&gt; Nothing">attribute != null</requires>
+      <requires csharp="defaultName != null" vb="defaultName &lt;&gt; Nothing">defaultName != null</requires>
+      <requires csharp="defaultXmlns != null" vb="defaultXmlns &lt;&gt; Nothing">defaultXmlns != null</requires>
+      <ensures csharp="result != (System.Xml.Linq.XName)null" vb="result &lt;&gt; ((System.Xml.Linq.XName)Nothing) ">result != (System.Xml.Linq.XName)null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PropertyMapping`2.GetQNameFromDataMember(System.Runtime.Serialization.DataMemberAttribute,System.String,System.String)">
+      <requires csharp="attribute != null" vb="attribute &lt;&gt; Nothing">attribute != null</requires>
+      <requires csharp="defaultName != null" vb="defaultName &lt;&gt; Nothing">defaultName != null</requires>
+      <requires csharp="defaultXmlns != null" vb="defaultXmlns &lt;&gt; Nothing">defaultXmlns != null</requires>
+      <ensures csharp="result != (System.Xml.Linq.XName)null" vb="result &lt;&gt; ((System.Xml.Linq.XName)Nothing) ">result != (System.Xml.Linq.XName)null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PropertyMapping`2.GetQName(System.Collections.Generic.IList{System.Attribute},System.String,System.String)">
+      <requires csharp="attributes != null" vb="attributes &lt;&gt; Nothing">attributes != null</requires>
+      <requires csharp="defaultName != null" vb="defaultName &lt;&gt; Nothing">defaultName != null</requires>
+      <requires csharp="defaultXmlns != null" vb="defaultXmlns &lt;&gt; Nothing">defaultXmlns != null</requires>
+      <ensures csharp="result != (System.Xml.Linq.XName)null" vb="result &lt;&gt; ((System.Xml.Linq.XName)Nothing) ">result != (System.Xml.Linq.XName)null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PropertyMapping`2.SetValue(`0,System.String)">
+      <requires csharp="(object)obj != null" vb="((Object)obj) &lt;&gt; Nothing">(object)obj != null</requires>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PhoneNumber.DebuggerDisplay">
+      <getter>
+        <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+      </getter>
+    </member>
+    <member name="P:Microsoft.SupplyChain.NamedUri.Schema">
+      <getter>
+        <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+      </getter>
+    </member>
+    <member name="P:Microsoft.SupplyChain.PersonalName.DebuggerDisplay">
+      <getter>
+        <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+      </getter>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Address.DebuggerDisplay">
+      <getter>
+        <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+      </getter>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifierTypeConverter.StripHexSpecifier(System.String)">
+      <requires csharp="hex != null" vb="hex &lt;&gt; Nothing">hex != null</requires>
+      <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+    </member>
+    <member name="P:Microsoft.SupplyChain.Faults.ErrorCode.Schemas">
+      <getter>
+        <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+      </getter>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
+      <requires inheritedFrom="M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)" inheritedFromTypeName="IXmlSerializable" csharp="reader != null" vb="reader &lt;&gt; Nothing">reader != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.PassportUniqueIdentifier.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
+      <requires inheritedFrom="M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)" inheritedFromTypeName="IXmlSerializable" csharp="writer != null" vb="writer &lt;&gt; Nothing">writer != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlExtensions.GetProperty``1(System.Type,System.Linq.Expressions.Expression{System.Func{``0}})">
+      <requires csharp="type != (System.Type)null" vb="type &lt;&gt; ((System.Type)Nothing) ">type != (System.Type)null</requires>
+      <requires csharp="propertyExpression != null" vb="propertyExpression &lt;&gt; Nothing">propertyExpression != null</requires>
+      <ensures csharp="result != (System.Reflection.PropertyInfo)null" vb="result &lt;&gt; ((System.Reflection.PropertyInfo)Nothing) ">result != (System.Reflection.PropertyInfo)null</ensures>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlExtensions.GetDefaultNamespace(System.Type)">
+      <requires csharp="type != (System.Type)null" vb="type &lt;&gt; ((System.Type)Nothing) ">type != (System.Type)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlExtensions.GetXmlValue(System.Xml.XmlReader,System.Reflection.PropertyInfo,System.Xml.Linq.XName)">
+      <requires csharp="property != (System.Reflection.PropertyInfo)null" vb="property &lt;&gt; ((System.Reflection.PropertyInfo)Nothing) ">property != (System.Reflection.PropertyInfo)null</requires>
+      <requires csharp="qname != (System.Xml.Linq.XName)null" vb="qname &lt;&gt; ((System.Xml.Linq.XName)Nothing) ">qname != (System.Xml.Linq.XName)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.ConvertTypeConverter.#ctor(System.Type)">
+      <requires csharp="sourceType != (System.Type)null" vb="sourceType &lt;&gt; ((System.Type)Nothing) ">sourceType != (System.Type)null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlSerializable.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
+      <requires inheritedFrom="M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)" inheritedFromTypeName="IXmlSerializable" csharp="reader != null" vb="reader &lt;&gt; Nothing">reader != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.XmlSerializable.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
+      <requires inheritedFrom="M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)" inheritedFromTypeName="IXmlSerializable" csharp="writer != null" vb="writer &lt;&gt; Nothing">writer != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)">
+      <requires inheritedFrom="M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)" inheritedFromTypeName="IXmlSerializable" csharp="reader != null" vb="reader &lt;&gt; Nothing">reader != null</requires>
+    </member>
+    <member name="M:Microsoft.SupplyChain.SerializableUri.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)">
+      <requires inheritedFrom="M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)" inheritedFromTypeName="IXmlSerializable" csharp="writer != null" vb="writer &lt;&gt; Nothing">writer != null</requires>
+    </member>
+  </members>
+</doc>

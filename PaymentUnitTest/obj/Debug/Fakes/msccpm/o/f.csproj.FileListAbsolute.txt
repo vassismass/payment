@@ -1,0 +1,16 @@
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\Microsoft.SupplyChain.Care.PaymentModels.Fakes.xml
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\Microsoft.SupplyChain.Care.PaymentModels.Fakes.dll
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\Microsoft.SupplyChain.Care.PaymentModels.Fakes.pdb
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\Microsoft.SupplyChain.Care.Payment.ServiceLibrary.dll
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\Microsoft.SupplyChain.Care.PaymentModels.dll
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\SettlePayment.dll
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\Microsoft.SupplyChain.Care.PaymentModels.pdb
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\Microsoft.SupplyChain.Care.PaymentModels.xml
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\Microsoft.SupplyChain.Care.Payment.ServiceLibrary.pdb
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\b\SettlePayment.pdb
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\o\f.csprojResolveAssemblyReference.cache
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\o\Microsoft.SupplyChain.Care.PaymentModels.Fakes.dll
+C:\CareServices\Payment\Source\Payment\PaymentUnitTest\obj\Debug\Fakes\msccpm\o\Microsoft.SupplyChain.Care.PaymentModels.Fakes.pdb
